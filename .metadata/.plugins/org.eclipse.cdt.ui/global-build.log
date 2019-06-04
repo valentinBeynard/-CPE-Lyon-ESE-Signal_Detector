@@ -1,0 +1,78 @@
+23:16:05 **** Incremental Build of configuration Debug for project Signal_Detector ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Inc -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/Components" -I../Drivers/CMSIS/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP" -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Utilities/Fonts" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:1360:13: warning: 'MX_USART6_UART_Init' defined but not used [-Wunused-function]
+ static void MX_USART6_UART_Init(void)
+             ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:1283:13: warning: 'MX_TIM12_Init' defined but not used [-Wunused-function]
+ static void MX_TIM12_Init(void)
+             ^~~~~~~~~~~~~
+../Src/main.c:1236:13: warning: 'MX_TIM8_Init' defined but not used [-Wunused-function]
+ static void MX_TIM8_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:1177:13: warning: 'MX_TIM5_Init' defined but not used [-Wunused-function]
+ static void MX_TIM5_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:1118:13: warning: 'MX_TIM3_Init' defined but not used [-Wunused-function]
+ static void MX_TIM3_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:1059:13: warning: 'MX_TIM2_Init' defined but not used [-Wunused-function]
+ static void MX_TIM2_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:979:13: warning: 'MX_TIM1_Init' defined but not used [-Wunused-function]
+ static void MX_TIM1_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:939:13: warning: 'MX_SPI2_Init' defined but not used [-Wunused-function]
+ static void MX_SPI2_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:903:13: warning: 'MX_SPDIFRX_Init' defined but not used [-Wunused-function]
+ static void MX_SPDIFRX_Init(void)
+             ^~~~~~~~~~~~~~~
+../Src/main.c:875:13: warning: 'MX_SDMMC1_SD_Init' defined but not used [-Wunused-function]
+ static void MX_SDMMC1_SD_Init(void)
+             ^~~~~~~~~~~~~~~~~
+../Src/main.c:800:13: warning: 'MX_SAI2_Init' defined but not used [-Wunused-function]
+ static void MX_SAI2_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:707:13: warning: 'MX_RTC_Init' defined but not used [-Wunused-function]
+ static void MX_RTC_Init(void)
+             ^~~~~~~~~~~
+../Src/main.c:672:13: warning: 'MX_QUADSPI_Init' defined but not used [-Wunused-function]
+ static void MX_QUADSPI_Init(void)
+             ^~~~~~~~~~~~~~~
+../Src/main.c:564:13: warning: 'MX_I2C3_Init' defined but not used [-Wunused-function]
+ static void MX_I2C3_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:518:13: warning: 'MX_I2C1_Init' defined but not used [-Wunused-function]
+ static void MX_I2C1_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:473:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+../Src/main.c:399:13: warning: 'MX_DCMI_Init' defined but not used [-Wunused-function]
+ static void MX_DCMI_Init(void)
+             ^~~~~~~~~~~~
+../Src/main.c:368:13: warning: 'MX_CRC_Init' defined but not used [-Wunused-function]
+ static void MX_CRC_Init(void)
+             ^~~~~~~~~~~
+../Src/main.c:318:13: warning: 'MX_ADC3_Init' defined but not used [-Wunused-function]
+ static void MX_ADC3_Init(void)
+             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "Signal_Detector.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Signal_Detector.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Signal_Detector.elf
+ 
+arm-none-eabi-objdump -h -S  Signal_Detector.elf  > "Signal_Detector.list"
+arm-none-eabi-size   Signal_Detector.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52876	     32	   5856	  58764	   e58c	Signal_Detector.elf
+Finished building: default.size.stdout
+ 
+Finished building: Signal_Detector.list
+ 
+23:16:18 **** Incremental Build of configuration Debug for project Signal_Detector ****
+make -j8 all 
+arm-none-eabi-size   Signal_Detector.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52876	     32	   5856	  58764	   e58c	Signal_Detector.elf
+Finished building: default.size.stdout
+ 
