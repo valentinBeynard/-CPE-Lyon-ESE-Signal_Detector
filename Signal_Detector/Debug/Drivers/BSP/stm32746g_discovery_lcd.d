@@ -56,9 +56,9 @@ Drivers/BSP/stm32746g_discovery_lcd.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_hcd.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h \
  ../Drivers/BSP/stm32746g_discovery.h ../Inc/../Utilities/Fonts/fonts.h \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font24.c \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/font24.c \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h
 
 ../Drivers/BSP/stm32746g_discovery_lcd.h:
 
@@ -174,8 +174,8 @@ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\
 
 ../Inc/../Utilities/Fonts/fonts.h:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font24.c:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/font24.c:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h:

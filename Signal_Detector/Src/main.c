@@ -160,11 +160,11 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
+  /*MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_DMA2D_Init();
   MX_FMC_Init();
-  MX_LTDC_Init();
+  MX_LTDC_Init();*/
 
   /*
   MX_ADC3_Init();
@@ -213,7 +213,7 @@ int main(void)
   BSP_LCD_DisplayStringAt(0, 35, (uint8_t *)"Drivers examples", CENTER_MODE);
 
   /* Draw Bitmap */
-  BSP_LCD_DrawBitmap((BSP_LCD_GetXSize() - 80) / 2, 65, (uint8_t *)stlogo);
+  //BSP_LCD_DrawBitmap((BSP_LCD_GetXSize() - 80) / 2, 65, (uint8_t *)stlogo);
 
   /* USER CODE END 2 */
 
@@ -222,7 +222,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
   }
