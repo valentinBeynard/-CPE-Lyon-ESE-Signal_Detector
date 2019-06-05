@@ -1,0 +1,58 @@
+/*
+ * display_lcd.c
+ *
+ *  Created on: Jun 5, 2019
+ *      Author: BEYNARD
+ */
+#include "display_lcd.h"
+#include "stm32746g_discovery_lcd.h"
+
+sFONT title_font = Font16;
+
+#define PLOT_X	20
+#define PLOT_Y	20
+#define PLOT_WIDTH	(RK043FN48H_WIDTH - 20)
+#define PLOT_HEIGHT	100
+
+
+void Init_Display(void)
+{
+	BSP_LCD_Init();
+
+	BSP_LCD_LayerDefaultInit(LTDC_ACTIVE_LAYER, LCD_FB_START_ADDRESS);
+
+	/* Set LCD Foreground Layer  */
+	BSP_LCD_SelectLayer(LTDC_ACTIVE_LAYER);
+
+	/* Enable LCD Display */
+	BSP_LCD_DisplayOn();
+
+	/* Clear the LCD */
+	BSP_LCD_SetBackColor(LCD_COLOR_WHITE);
+	BSP_LCD_Clear(LCD_COLOR_WHITE);
+
+	/* Set the LCD Text Color */
+	BSP_LCD_SetTextColor(LCD_COLOR_DARKBLUE);
+
+	/* Display LCD messages */
+	BSP_LCD_DisplayStringAt(0, 10, (uint8_t *)"KiCAD Team Bitch !", CENTER_MODE);
+	BSP_LCD_DisplayStringAt(0, 35, (uint8_t *)"Drivers examples", CENTER_MODE);
+}
+
+
+void Display_Render(void)
+{
+	/* Clear the LCD */
+	BSP_LCD_SetBackColor(LCD_COLOR_WHITE);
+	BSP_LCD_Clear(LCD_COLOR_WHITE);
+
+	/* Set the LCD Text Color */
+	BSP_LCD_SetTextColor(LCD_COLOR_ORANGE);
+
+	/* Main Analyzer Title */
+	BSP_LCD_SetFont(&Font16);
+	BSP_LCD_DisplayStringAt(0, 10, (uint8_t *)"CPE Lyon : Raw Signal !", CENTER_MODE);
+
+	/* Plot Background */
+	BSP_LCD_FillRect();
+}

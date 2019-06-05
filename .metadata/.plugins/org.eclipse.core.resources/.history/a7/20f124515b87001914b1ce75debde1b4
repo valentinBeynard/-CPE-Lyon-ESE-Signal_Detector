@@ -1,0 +1,13 @@
+/*
+ * display_lcd.c
+ *
+ *  Created on: Jun 5, 2019
+ *      Author: BEYNARD
+ */
+#include "display_lcd.h"
+
+void Init_Display(void)
+{
+
+}
+

@@ -5330,3 +5330,942 @@ java.net.UnknownHostException: download.eclipse.org
 2019-06-05 08:11:06,960 [INFO] com.st.microxplorer.plugins.ip.nvic.NvicIntPanel.ancestorAdded(NvicIntPanel.java:85) - NVIC parent = javax.swing.JTabbedPane[,0,0,0x0,invalid,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
 2019-06-05 08:11:07,069 [INFO] com.st.microxplorer.plugins.ip.nvic.NvicIntPanel.ancestorAdded(NvicIntPanel.java:85) - NVIC parent = javax.swing.JTabbedPane[,0,0,0x0,invalid,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
 2019-06-05 08:11:12,849 [INFO] com.st.microxplorer.plugins.ip.nvic.NvicIntPanel.ancestorAdded(NvicIntPanel.java:85) - NVIC parent = javax.swing.JTabbedPane[,0,0,0x0,invalid,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
+2019-06-05 08:13:22,447 [INFO] com.st.microxplorer.plugins.ip.i2c.gui.I2cTimingTraitement.calculeSCLL_SCLH(I2cTimingTraitement.java:320) - 0x00C0EAFF
+2019-06-05 08:14:41,655 [INFO] com.st.microxplorer.plugins.ip.i2c.gui.I2cTimingTraitement.calculeSCLL_SCLH(I2cTimingTraitement.java:320) - 0x00C0EAFF
+2019-06-05 08:14:48,859 [INFO] com.st.microxplorer.plugins.ip.i2c.gui.I2cTimingTraitement.calculeSCLL_SCLH(I2cTimingTraitement.java:320) - 0x00C0EAFF
+2019-06-05 08:15:22,308 [INFO] com.st.components.util.UtilMem.printUsedHeapMemory(UtilMem.java:74) - End SaveConfig() Used Memory: 627305600 Bytes (773849088)
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: GFXSimulator
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: SPDIFRX
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: LTDC
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: SYS
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: RCC
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: CRC
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: SDMMC
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: RTC
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: DCMI
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: NVIC
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: DMA2D
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: USART
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: CORTEX_M7
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: FMC
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: SAI
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: ETH
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: QUADSPI
+2019-06-05 08:15:22,577 [INFO] com.st.microxplorer.codegenerator.CodeGenerator.setProjectSettings(CodeGenerator.java:572) - code generatio: config db path: D:\STM32CubeIDE_1.0.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201904230831\\db\
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - LayerIdx_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowX0_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowX1_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowY0_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowY1_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - PixelFormat_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Alpha_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Alpha0_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - BlendingFactor1_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - BlendingFactor2_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - FBStartAdress_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - ImageWidth_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - ImageHeight_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Blue_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Green_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:22,608 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Red_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:15:23,093 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\license.tmp_save
+2019-06-05 08:15:23,440 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\license.tmp
+2019-06-05 08:15:24,225 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\gpio.tmp_save
+2019-06-05 08:15:24,428 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\gpio.tmp
+2019-06-05 08:15:28,805 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\cortex.tmp_save
+2019-06-05 08:15:28,933 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\cortex.tmp
+2019-06-05 08:15:28,996 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp_save
+2019-06-05 08:15:29,121 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp
+2019-06-05 08:15:29,167 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp_save
+2019-06-05 08:15:29,261 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp
+2019-06-05 08:15:29,308 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp_save
+2019-06-05 08:15:29,433 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp
+2019-06-05 08:15:29,511 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_init.tmp_save
+2019-06-05 08:15:29,636 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_init.tmp
+2019-06-05 08:15:29,683 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_GV.tmp_save
+2019-06-05 08:15:29,780 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_GV.tmp
+2019-06-05 08:15:29,812 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_msp.tmp_save
+2019-06-05 08:15:29,921 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_msp.tmp
+2019-06-05 08:15:30,015 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_it.c_save
+2019-06-05 08:15:30,171 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_it.c
+2019-06-05 08:15:30,218 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_it.h_save
+2019-06-05 08:15:30,312 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_it.h
+2019-06-05 08:15:30,358 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_init.tmp_save
+2019-06-05 08:15:30,436 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_init.tmp
+2019-06-05 08:15:30,468 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_GV.tmp_save
+2019-06-05 08:15:30,534 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_GV.tmp
+2019-06-05 08:15:30,565 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_msp.tmp_save
+2019-06-05 08:15:30,643 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\sai_msp.tmp
+2019-06-05 08:15:30,690 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp_save
+2019-06-05 08:15:30,784 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp
+2019-06-05 08:15:30,815 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp_save
+2019-06-05 08:15:30,877 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp
+2019-06-05 08:15:30,924 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp_save
+2019-06-05 08:15:31,018 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp
+2019-06-05 08:15:31,073 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_hal_msp.c_save
+2019-06-05 08:15:31,350 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_hal_msp.c
+2019-06-05 08:15:31,381 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\system.tmp_save
+2019-06-05 08:15:31,444 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\system.tmp
+2019-06-05 08:15:31,506 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_hal_conf.h_save
+2019-06-05 08:15:31,616 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_hal_conf.h
+2019-06-05 08:15:31,678 [WARN] com.st.microxplorer.codegenerator.IPConfigManager.getMainConfig(IPConfigManager.java:2546) - IP not found : gpio
+2019-06-05 08:15:31,694 [WARN] com.st.microxplorer.codegenerator.CodeGenerator.generateMainCode(CodeGenerator.java:2532) - IP not found : gpio
+2019-06-05 08:15:31,725 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\main.h_save
+2019-06-05 08:15:31,850 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\main.h
+2019-06-05 08:15:31,897 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\main.c_save
+2019-06-05 08:15:32,197 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\main.c
+2019-06-05 08:15:33,607 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createLibrariesFolders(ProjectBuilder.java:1489) - Time for Copy HAL[1] : 972mS.
+2019-06-05 08:15:33,607 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createToolChainFolders(ProjectBuilder.java:2057) - Project Generator version: 3.2.0
+2019-06-05 08:15:33,861 [INFO] com.st.microxplorer.plugins.projectmanager.model.ConfigFileManager.createTmpFile(ConfigFileManager.java:880) - The Die is : DIE449
+2019-06-05 08:15:36,438 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createToolChainFolders(ProjectBuilder.java:2150) - Time for Generating toolchain IDE Files: 2831mS.
+2019-06-05 08:15:36,438 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createCmsisFolder(ProjectBuilder.java:1380) - Time for Copy CMSIS : 0mS.
+2019-06-05 08:15:36,516 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createCmsisFolder(ProjectBuilder.java:1380) - Time for Copy CMSIS : 0mS.
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.525
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.541
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.541
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.556
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.556
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.556
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.572
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.572
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.572
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.588
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.588
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.588
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.603
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.603
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.619
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.619
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.619
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.635
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.635
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.635
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-06-05 08:22:45.650
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+2019-06-05 08:26:25,469 [INFO] com.st.components.util.UtilMem.printUsedHeapMemory(UtilMem.java:74) - End SaveConfig() Used Memory: 592615392 Bytes (872415232)
+2019-06-05 08:26:26,863 [INFO] com.st.components.util.UtilMem.printUsedHeapMemory(UtilMem.java:74) - End SaveConfig() Used Memory: 607295456 Bytes (872415232)
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: GFXSimulator
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: LTDC
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: SYS
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: RCC
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: SDMMC
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: RTC
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: DCMI
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: NVIC
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: DMA2D
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: USART
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: CORTEX_M7
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: FMC
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.plugins.ipmanager.gui.BlockDiagram.setSpecificCodeInputsForAllPlugins(BlockDiagram.java:1879) - set Specific Code input for plugin: QUADSPI
+2019-06-05 08:26:27,007 [INFO] com.st.microxplorer.codegenerator.CodeGenerator.setProjectSettings(CodeGenerator.java:572) - code generatio: config db path: D:\STM32CubeIDE_1.0.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201904230831\\db\
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - LayerIdx_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowX0_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowX1_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowY0_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - WindowY1_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - PixelFormat_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Alpha_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Alpha0_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - BlendingFactor1_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - BlendingFactor2_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - FBStartAdress_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,007 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - ImageWidth_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,023 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - ImageHeight_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,023 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Blue_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,023 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Green_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,023 [WARN] com.st.microxplorer.mcu.IP.getRefParameters(IP.java:1918) - Red_L1 not found: check if there is a RefParameter without a condition.
+2019-06-05 08:26:27,273 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\license.tmp_save
+2019-06-05 08:26:27,351 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\license.tmp
+2019-06-05 08:26:27,823 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\gpio.tmp_save
+2019-06-05 08:26:27,917 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\gpio.tmp
+2019-06-05 08:26:30,240 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\cortex.tmp_save
+2019-06-05 08:26:30,318 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\cortex.tmp
+2019-06-05 08:26:30,349 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp_save
+2019-06-05 08:26:30,443 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp
+2019-06-05 08:26:30,474 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp_save
+2019-06-05 08:26:30,537 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp
+2019-06-05 08:26:30,552 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp_save
+2019-06-05 08:26:30,630 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp
+2019-06-05 08:26:30,677 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_it.c_save
+2019-06-05 08:26:30,787 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_it.c
+2019-06-05 08:26:30,802 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_it.h_save
+2019-06-05 08:26:30,880 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_it.h
+2019-06-05 08:26:30,927 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp_save
+2019-06-05 08:26:31,009 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_HC.tmp
+2019-06-05 08:26:31,024 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp_save
+2019-06-05 08:26:31,101 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_GV.tmp
+2019-06-05 08:26:31,132 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp_save
+2019-06-05 08:26:31,226 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\mx_fmc_MSP.tmp
+2019-06-05 08:26:31,257 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_hal_msp.c_save
+2019-06-05 08:26:31,476 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\stm32f7xx_hal_msp.c
+2019-06-05 08:26:31,491 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\system.tmp_save
+2019-06-05 08:26:31,569 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\MXTmpFiles\system.tmp
+2019-06-05 08:26:31,601 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_hal_conf.h_save
+2019-06-05 08:26:31,694 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\stm32f7xx_hal_conf.h
+2019-06-05 08:26:31,726 [WARN] com.st.microxplorer.codegenerator.IPConfigManager.getMainConfig(IPConfigManager.java:2546) - IP not found : gpio
+2019-06-05 08:26:31,726 [WARN] com.st.microxplorer.codegenerator.CodeGenerator.generateMainCode(CodeGenerator.java:2532) - IP not found : gpio
+2019-06-05 08:26:31,757 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\main.h_save
+2019-06-05 08:26:31,856 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Inc\main.h
+2019-06-05 08:26:31,887 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:190) - oldGeneratedFile, C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\main.c_save
+2019-06-05 08:26:32,075 [INFO] com.st.microxplorer.codegenerator.CodeEngine.genCode(CodeEngine.java:208) - Generated code: C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\Src\main.c
+2019-06-05 08:26:32,688 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createLibrariesFolders(ProjectBuilder.java:1489) - Time for Copy HAL[1] : 238mS.
+2019-06-05 08:26:32,688 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createToolChainFolders(ProjectBuilder.java:2057) - Project Generator version: 3.2.0
+2019-06-05 08:26:32,907 [INFO] com.st.microxplorer.plugins.projectmanager.model.ConfigFileManager.createTmpFile(ConfigFileManager.java:880) - The Die is : DIE449
+2019-06-05 08:26:33,504 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createToolChainFolders(ProjectBuilder.java:2150) - Time for Generating toolchain IDE Files: 816mS.
+2019-06-05 08:26:33,504 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createCmsisFolder(ProjectBuilder.java:1380) - Time for Copy CMSIS : 0mS.
+2019-06-05 08:26:33,519 [INFO] com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createCmsisFolder(ProjectBuilder.java:1380) - Time for Copy CMSIS : 0mS.

@@ -31,10 +31,6 @@ Drivers/BSP/Components/ts3510 \
 Drivers/BSP/Components/wm8994 \
 Drivers/BSP \
 Drivers/STM32F7xx_HAL_Driver/Src \
-Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src \
-Middlewares/ST/STM32_USB_Host_Library/Core/Src \
-Middlewares/Third_Party/FatFs/src \
-Middlewares/Third_Party/FatFs/src/option \
 Src \
 Startup \
 
