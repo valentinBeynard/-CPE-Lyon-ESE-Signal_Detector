@@ -60,7 +60,12 @@
 #define DETEC_CNT_WIDTH	NORMAL_BUTTON_WIDTH
 #define DETEC_CNT_HEIGHT NORMAL_BUTTON_HEIGHT
 
-
+typedef enum
+{
+	INPUT_PLOT = 0,
+	REF_PLOT,
+	CORR_PLOT
+}PLOT_ID;
 
 typedef struct
 {

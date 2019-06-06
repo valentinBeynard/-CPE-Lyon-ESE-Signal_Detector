@@ -75,24 +75,6 @@ SDRAM_HandleTypeDef hsdram1;
 #define M_signal_pts	512
 
 
-int i = 0,nb_acquisition = 0;
-
-uint8_t ADC_value = 0;
-uint8_t reference[M_signal_pts];
-uint8_t comparaison[M_signal_pts];
-
-__IO uint32_t adc_last_value = 0;
-
-__IO uint8_t display_buff[PLOT_WIDTH];
-uint16_t display_buff_ptr = 0;
-uint8_t display_ready = 0 ;
-
-float y[M_signal_pts + M_signal_pts - 1];
-uint8_t corr_func[M_signal_pts + M_signal_pts - 1];
-uint16_t corr_max_abs = 0;
-uint16_t max;
-int l;
-short detection=1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -117,9 +99,90 @@ static void MX_TIM3_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void declencher_acquisition(){
-	i=0;
 	//HAL_ADC_Start(&hadc1);
 	HAL_TIM_Base_Start_IT(&htim7);
+}
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+{
+	if(htim->Instance==TIM7)
+	{
+
+
+//		if (nb_acquisition==0){
+//				reference[i]=adc_last_value;
+//		}else{
+//				comparaison[i]=adc_last_value;
+//
+//				/* Add value in buffer for displaying */
+//				display_buff[display_buff_ptr] = adc_last_value;
+//				display_buff_ptr++;
+//
+//				/* Indicate display_buff ready for displaying */
+//				if( display_buff_ptr >= PLOT_WIDTH)
+//				{
+//					display_buff_ptr = 0;
+//					display_ready = 1;
+//					//HAL_TIM_Base_Stop_IT(&htim7);
+//				}
+//
+//		}
+//
+//		i++;
+//		if (i>= M_signal_pts){
+//			HAL_TIM_Base_Stop_IT(&htim7);
+//			//HAL_ADC_Stop(&hadc1);
+//			if (nb_acquisition>0){
+//				//crosscorrelation(reference,reference);
+//			}
+//			nb_acquisition++;
+//			declencher_acquisition();
+//		}
+
+//		HAL_ADC_Start(&hadc1);
+//
+//		HAL_ADC_PollForConversion(&hadc1,10);
+//
+//		ADC_value = HAL_ADC_GetValue(&hadc1);
+//		if (nb_acquisition==0){
+//				reference[i]=ADC_value;
+//		}else{
+//				comparaison[i]=ADC_value;
+//
+//				/* Add value in buffer for displaying */
+//				display_buff[display_buff_ptr] = ADC_value;
+//				display_buff_ptr++;
+//
+//				/* Indicate display_buff ready for displaying */
+//				if( display_buff_ptr >= PLOT_WIDTH)
+//				{
+//					display_buff_ptr = 0;
+//					display_ready = 1;
+//					//HAL_TIM_Base_Stop_IT(&htim7);
+//				}
+//
+//		}
+//
+//		HAL_ADC_Stop(&hadc1);
+//		i++;
+//		if (i>= M_signal_pts){
+//			HAL_TIM_Base_Stop_IT(&htim7);
+//			//HAL_ADC_Stop(&hadc1);
+//			if (nb_acquisition>0){
+//				//crosscorrelation(reference,reference);
+//			}
+//			nb_acquisition++;
+//			declencher_acquisition();
+//		}
+
+
+
+	}
+	else if(htim->Instance==TIM3)
+	{
+		TouchScreen_Polling();
+	}
 }
 /* USER CODE END 0 */
 
@@ -179,16 +242,14 @@ int main(void)
   Display_Render();
   Draw_GUI();
 
-  /* Periodic Check of touchscreen) */
-  HAL_TIM_Base_Start_IT(&htim3);
 
-  HAL_ADC_Start(&hadc1);
-  if(HAL_ADC_Start_DMA(&hadc1, &display_buff, PLOT_WIDTH) != HAL_OK)
-  {
-	  return 0;
-  }
+
+  Init_Sampling(&hadc1);
 
   //declencher_acquisition();
+
+  /* Periodic Check of touchscreen) */
+  HAL_TIM_Base_Start_IT(&htim3);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -198,13 +259,25 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	signal_handler_process();
 
-
-	if(display_ready == 1)
+	if(can_display() == 1)
 	{
 		//Plot_Signal( (corr_func + (corr_max_abs-200)), 400);
-		Plot_Signal( display_buff , DISPLAY_BUFF_SIZE);
-		display_ready = 0;
+		switch(get_current_plot_ID())
+		{
+			case INPUT_PLOT:
+				Plot_Signal( get_signal_data(INPUT) , DISPLAY_BUFF_SIZE);
+				break;
+			case REF_PLOT:
+				Plot_Signal( get_signal_data(REF) , DISPLAY_BUFF_SIZE);
+				break;
+			case CORR_PLOT:
+				Plot_Signal( get_signal_data(CORR) , DISPLAY_BUFF_SIZE);
+				break;
+		}
+
+		disable_signal_display();
 	}
 
 	HAL_Delay(50);

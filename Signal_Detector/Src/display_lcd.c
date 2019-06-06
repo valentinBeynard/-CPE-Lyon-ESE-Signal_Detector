@@ -55,6 +55,7 @@ GUI_Button button_list[NUMBER_OF_BUTTON] =
 
 uint8_t detection_label[32] = "Signals : ";
 
+PLOT_ID plot_id = INPUT_PLOT;
 
 //if(GPIO_Pin == TS_INT_PIN)
 //  {
@@ -180,6 +181,7 @@ void active_button(uint8_t index)
 		}
 		else{
 			button_list[j].is_active = 1;
+			plot_id = j;
 		}
 	}
 }
@@ -211,4 +213,9 @@ void TouchScreen_Polling(void)
 
 
 	}
+}
+
+PLOT_ID get_current_plot_ID()
+{
+	return plot_id;
 }

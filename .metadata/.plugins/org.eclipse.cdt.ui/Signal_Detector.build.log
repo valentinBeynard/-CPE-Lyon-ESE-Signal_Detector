@@ -1,10 +1,10 @@
-11:08:34 **** Incremental Build of configuration Debug for project Signal_Detector ****
+23:59:49 **** Incremental Build of configuration Debug for project Signal_Detector ****
 make -j8 all 
 arm-none-eabi-size   Signal_Detector.elf 
    text	   data	    bss	    dec	    hex	filename
-  58276	    180	   9972	  68428	  10b4c	Signal_Detector.elf
+  39856	    176	 267064	 307096	  4af98	Signal_Detector.elf
 Finished building: default.size.stdout
  
 
-11:08:37 Build Finished. 0 errors, 0 warnings. (took 3s.517ms)
+23:59:53 Build Finished. 0 errors, 0 warnings. (took 3s.678ms)
 

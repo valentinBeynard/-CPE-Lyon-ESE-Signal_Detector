@@ -47,13 +47,13 @@ Drivers/BSP/stm32746g_discovery_lcd.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../Drivers/BSP/stm32746g_discovery.h ../Inc/../Utilities/Fonts/fonts.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font24.c \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font20.c \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font16.c \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font12.c \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font8.c
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/font24.c \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/font20.c \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/font16.c \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/font12.c \
+ ../Drivers/CMSIS/Include/../../../Utilities/Fonts/font8.c
 
 ../Drivers/BSP/stm32746g_discovery_lcd.h:
 
@@ -151,16 +151,16 @@ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\
 
 ../Inc/../Utilities/Fonts/fonts.h:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font24.c:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/font24.c:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/fonts.h:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font20.c:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/font20.c:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font16.c:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/font16.c:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font12.c:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/font12.c:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font8.c:
+../Drivers/CMSIS/Include/../../../Utilities/Fonts/font8.c:

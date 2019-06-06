@@ -50,6 +50,7 @@
 "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_sdmmc.o"
 "Src/display_lcd.o"
 "Src/main.o"
+"Src/signal_handler.o"
 "Src/stm32f7xx_hal_msp.o"
 "Src/stm32f7xx_it.o"
 "Src/system_stm32f7xx.o"

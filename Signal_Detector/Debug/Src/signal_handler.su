@@ -1,0 +1,8 @@
+signal_handler.c:40:6:HAL_ADC_ConvCpltCallback	0	static
+signal_handler.c:52:6:Init_Sampling	8	static
+signal_handler.c:89:6:signals_analyse	0	static
+signal_handler.c:79:6:signal_handler_process	16	static
+signal_handler.c:112:6:crosscorrelation	20528	dynamic,bounded
+signal_handler.c:209:9:can_display	0	static
+signal_handler.c:214:9:disable_signal_display	0	static
+signal_handler.c:219:10:get_signal_data	0	static

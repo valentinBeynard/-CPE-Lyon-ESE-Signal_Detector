@@ -1,0 +1,28 @@
+/*
+ * signal_handler.h
+ *
+ *  Created on: Jun 6, 2019
+ *      Author: BEYNARD
+ */
+
+#ifndef SIGNAL_HANDLER_H_
+#define SIGNAL_HANDLER_H_
+
+#define SAMPLES_NBR	512
+
+typedef struct
+{
+	uint8_t sampling_buff[SAMPLES_NBR];
+	uint8_t is_ready;
+}SAMPLES_PCK;
+
+typedef struct
+{
+
+}SIGNALS_PCK;
+
+void Init_Sampling(ADC_HandleTypeDef hadc1);
+void crosscorrelation(uint8_t* ref_signal, uint8_t* comp_signal);
+
+
+#endif /* SIGNAL_HANDLER_H_ */

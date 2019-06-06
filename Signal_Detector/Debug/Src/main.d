@@ -51,7 +51,7 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
  C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery_ts.h \
  c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\ft5336\ft5336.h \
  c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\common\ts.h \
- ../Src/stlogo.h
+ ../Src/stlogo.h ../Src/signal_handler.h
 
 ../Inc/main.h:
 
@@ -160,3 +160,5 @@ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\
 c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\common\ts.h:
 
 ../Src/stlogo.h:
+
+../Src/signal_handler.h:
