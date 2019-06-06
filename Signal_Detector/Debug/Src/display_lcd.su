@@ -1,3 +1,6 @@
-display_lcd.c:50:6:Init_Display	8	static
-display_lcd.c:75:6:Display_Render	8	static
-display_lcd.c:95:6:Plot_Signal	32	static
+display_lcd.c:65:6:Init_Display	16	static
+display_lcd.c:95:6:Display_Render	8	static
+display_lcd.c:115:6:Draw_GUI	24	static
+display_lcd.c:143:6:Plot_Signal	32	static
+display_lcd.c:173:6:active_button	24	static
+display_lcd.c:187:6:TouchScreen_Polling	24	static

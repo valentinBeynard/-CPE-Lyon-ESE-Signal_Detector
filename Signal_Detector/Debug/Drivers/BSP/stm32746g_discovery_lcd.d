@@ -23,6 +23,8 @@ Drivers/BSP/stm32746g_discovery_lcd.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
@@ -40,16 +42,18 @@ Drivers/BSP/stm32746g_discovery_lcd.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../Drivers/BSP/stm32746g_discovery.h ../Inc/../Utilities/Fonts/fonts.h \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font24.c \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font20.c \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font16.c \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font12.c \
- c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font8.c
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font24.c \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font20.c \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font16.c \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font12.c \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font8.c
 
 ../Drivers/BSP/stm32746g_discovery_lcd.h:
 
@@ -97,6 +101,10 @@ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
+
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
+
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h:
@@ -131,6 +139,10 @@ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h:
 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
+
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
+
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
@@ -139,16 +151,16 @@ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\
 
 ../Inc/../Utilities/Fonts/fonts.h:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font24.c:
+../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font24.c:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\fonts.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/fonts.h:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font20.c:
+../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font20.c:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font16.c:
+../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font16.c:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font12.c:
+../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font12.c:
 
-c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\utilities\fonts\font8.c:
+../Drivers/STM32F7xx_HAL_Driver/Inc/../../../Utilities/Fonts/font8.c:

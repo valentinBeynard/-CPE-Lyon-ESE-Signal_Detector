@@ -19,6 +19,8 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
@@ -36,9 +38,20 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
- ../Src/display_lcd.h ../Src/stlogo.h
+ ../Src/display_lcd.h \
+ C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery_lcd.h \
+ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\rk043fn48h\rk043fn48h.h \
+ C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery_sdram.h \
+ C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery.h \
+ ../Inc/../Utilities/Fonts/fonts.h \
+ C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery_ts.h \
+ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\ft5336\ft5336.h \
+ c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\common\ts.h \
+ ../Src/stlogo.h
 
 ../Inc/main.h:
 
@@ -82,6 +95,10 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
+
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
+
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h:
@@ -116,10 +133,30 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h:
 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
+
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
+
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
 
 ../Src/display_lcd.h:
+
+C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery_lcd.h:
+
+c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\rk043fn48h\rk043fn48h.h:
+
+C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery_sdram.h:
+
+C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery.h:
+
+../Inc/../Utilities/Fonts/fonts.h:
+
+C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/stm32746g_discovery_ts.h:
+
+c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\ft5336\ft5336.h:
+
+c:\users\beynard\documents\github\-cpe-lyon-ese-signal_detector\signal_detector\drivers\bsp\components\common\ts.h:
 
 ../Src/stlogo.h:
