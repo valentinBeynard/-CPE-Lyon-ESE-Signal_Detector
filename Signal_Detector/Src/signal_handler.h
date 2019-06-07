@@ -11,9 +11,10 @@
 #include "main.h"
 #include "stm32f7xx_hal.h"
 #include "string.h"
+#include "stdio.h"
 #include "stdlib.h"
 
-#define SAMPLES_NBR	2048
+#define SAMPLES_NBR	1024
 
 #define THRESHOLD_RATIO	0.95
 

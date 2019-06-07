@@ -3,9 +3,9 @@ signal_handler.c:65:6:Init_Sampling	16	static
 signal_handler.c:92:6:signal_handler_process	8	static
 signal_handler.c:102:6:signals_analyse	16	static
 signal_handler.c:132:6:search_signal	24	static
-signal_handler.c:152:6:crosscorrelation	152	dynamic
-signal_handler.c:253:9:can_display	4	static
-signal_handler.c:258:6:disable_signal_display	4	static
-signal_handler.c:263:9:get_threshold	16	static
-signal_handler.c:268:9:is_signal_here	4	static
-signal_handler.c:273:10:get_signal_data	24	static
+signal_handler.c:153:6:crosscorrelation	120	dynamic
+signal_handler.c:237:9:can_display	4	static
+signal_handler.c:242:6:disable_signal_display	4	static
+signal_handler.c:247:9:get_threshold	16	static
+signal_handler.c:252:9:is_signal_here	4	static
+signal_handler.c:257:10:get_signal_data	24	static

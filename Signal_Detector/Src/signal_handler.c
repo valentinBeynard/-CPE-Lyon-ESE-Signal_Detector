@@ -25,7 +25,7 @@ uint8_t result_ready;
 uint8_t corr_max;
 uint16_t sample_corr_max;
 
-uint8_t ref_threshold = 0;
+uint8_t ref_threshold = 1.0;
 
 uint8_t signal_detected = 0;
 
@@ -121,7 +121,7 @@ void signals_analyse()
 			raw_signal[i] = sampling_buff[i];//sampling_buff[i];
 		}
 
-		//crosscorrelation(ref_signal, raw_signal);
+		crosscorrelation(ref_signal, raw_signal);
 		search_signal();
 
 	}
@@ -149,104 +149,88 @@ void search_signal()
 }
 
 
-void crosscorrelation(uint8_t* ref_signal, uint8_t* comp_signal)
+
+void crosscorrelation(uint8_t* target, uint8_t* input_signal)
 {
 
-	int i,j,k;
+	uint32_t i,j,k;
 	int p = SAMPLES_NBR + SAMPLES_NBR -1;
 
-	float comp_f[p],comp_f_2[p], ref_signal_2[p],comp_signal_2[p];
-	float y[p];
-	float somme_ref,somme_comp;
-	float norm;
 
-	/*Copy signals*/
-	/* Pad the smaller sequence with zero*/
+	float x_signal[p];
+	float target_signal[p];
+	uint32_t x_norm = 0;
+	uint32_t target_norm = 0;
 
-	comp_signal_2[0] = (float)((comp_signal[0] - 0x7F))/0x7F;
-	ref_signal_2[0] = (float)((ref_signal[0] - 0x7F))/0x7F;
+	float correlation[p];
+	uint32_t shift = 0;
+	uint32_t a = 0;
 
-	somme_ref=ref_signal_2[0]*ref_signal_2[0];
-	somme_comp=comp_signal_2[0]*comp_signal_2[0];
+	uint32_t norm = 0;
+
+	uint16_t min_w = 0;
+	uint16_t max_w = 0;
+
+	/*
+	min_w = (uint16_t)( (p/2) - 200);
+	max_w = (uint16_t)( (p/2) + 200);
+	sample_corr_max = (uint16_t)( (p/2));*/
+
 
 	/* Reverse Signal Array to perform correlation x(n-l) */
 	/* and remove offset for each signals */
-	for(j=1;j<SAMPLES_NBR;j++){
-		comp_signal_2[j] = (float)((comp_signal[j] - 0x7F))/0x7F;
-		somme_comp+=comp_signal_2[j]*comp_signal_2[j];
-		ref_signal_2[j] = (float)((ref_signal[j] - 0x7F))/0x7F;
-		somme_ref+=ref_signal_2[j]*ref_signal_2[j];
-	}
-	for(i= SAMPLES_NBR ;i<p;i++){
-		comp_signal_2[i]=0;
-	}
-	for(i= SAMPLES_NBR;i<p;i++){
-		ref_signal_2[i]=0;
-	}
-
-  /*folding h(n) to h(-n)*/
-	y[0]=0;
-	comp_f[0]=comp_signal_2[0];
-	/* Reverse Signal Array to perform correlation x(n-l) */
-	/* and remove offset for each signals */
-	for(j=1;j<p;j++){ /*folding h(n) to h(-n)*/
-		comp_f[j]=comp_signal_2[p-j];
-	}
-
-	/*Circular convolution*/
-	for(i=0;i<p;i++){
-		y[0] += ref_signal_2[i] * comp_f[i];
-	}
-
-
-	for(k=1;k<p;k++)
+	for(j=0 ; j < p; j++)
 	{
-		y[k]=0;
 
-		/*circular shift*/
-		for(j=1;j<p;j++){
-			comp_f_2[j] = comp_f[j-1];
-		}
-
-		comp_f_2[0] = comp_f[p-1];
-
-		/*Circular convolution*/
-		for(i=0;i<p;i++)
+		/* Supress Offsets */
+		if(j < SAMPLES_NBR)
 		{
-			comp_f[i] = comp_f_2[i];
-			y[k] += ref_signal_2[i] * comp_f_2[i];
+			/* Suppress X Signal Offset */
+
+			x_signal[j] = (float)(( input_signal[j] - 0x7F))/0x7F;
+			x_norm += x_signal[j] * x_signal[j];
+
+			/* Suppress Ref Signal Offset */
+			target_signal[j] = (float)((target[j] - 0x7F))/0x7F;
+			target_norm += target_signal[j] * target_signal[j];
 		}
+		else
+		{
+			x_signal[j] = 0;
+			target_signal[j] = 0;
+		}
+	}
+
+	correlation[0]=0;
+
+
+	/* Perform all correlation(n) calculs */
+	corr_max = corr_func[0];
+
+	for(i = 0 ; i < p ; i++)
+	{
+		correlation[i] = 0;
+		/* Compute correlation(n) */
+		for(j = 0 ; j < p ; j++)
+		{
+			a = p - ((shift + j) % p);
+			correlation[i] += x_signal[j] * target_signal[p - ((shift + j) % p)];
+		}
+
+		if(correlation[i] > corr_max)
+		{
+			corr_max = correlation[i];
+			sample_corr_max = i;
+		}
+		shift++;
 
 	}
 
+	for(i = 0 ; i < p ; i++)
+	{
+		corr_func[i] =  (uint8_t)(0xFF * ( (float)(abs(correlation[i])) / ref_threshold));
+	}
 
-		/* Normalize Correlation function */
-		norm = (float) (sqrt(somme_ref) * sqrt(somme_comp));
-		for(k = 0 ; k < p ; k++)
-		{
-			y[k] = 0x7F * (y[k]/ norm) + 0x7F;
-			corr_func[k] = (uint8_t) ( y[k] );
-			corr_func[k] = 0xFF * corr_func[k];
-			if(y[k] > 1)
-			{
-				y[k] = 1;
-			}
-		}
-
-		corr_max = corr_func[0];
-
-		//l=0;
-
-		for(k=1;k<p;k++)
-		{
-			if(corr_func[k] > corr_max)
-			{
-				corr_max = corr_func[k];
-				sample_corr_max = k;
-				//l=k;
-			}
-
-		}
 
 }
 
@@ -283,7 +267,8 @@ uint8_t* get_signal_data(SIGNAL_ID id)
 		ret = ref_signal;
 		break;
 	default:
-		ret = (corr_func + (sample_corr_max - 200));
+		ret = (corr_func + sample_corr_max - 200);
+		//ret = (corr_func + (sample_corr_max - 200));
 		break;
 	}
 

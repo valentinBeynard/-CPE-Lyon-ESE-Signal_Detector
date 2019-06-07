@@ -181,12 +181,12 @@ void Plot_Threshold(uint8_t th)
 
 	BSP_LCD_SetTextColor(LCD_COLOR_RED);
 
-	BSP_LCD_DrawLine(PLOT_X, (uint16_t)(PLOT_Y + th_f * 0xFF), PLOT_X + PLOT_WIDTH, (uint16_t)(PLOT_Y + th_f * 0xFF));
+	BSP_LCD_DrawLine(PLOT_X, (uint16_t)(PLOT_Y + th_f * PLOT_HEIGHT), PLOT_X + PLOT_WIDTH, (uint16_t)(PLOT_Y + th_f * PLOT_HEIGHT));
 }
 
 void Draw_Signal_Marker(SIGNAL_STATE signal_state)
 {
-	if(SIGNAL_HERE)
+	if(signal_state == SIGNAL_HERE)
 	{
 		BSP_LCD_SetTextColor(LCD_COLOR_RED);
 	}

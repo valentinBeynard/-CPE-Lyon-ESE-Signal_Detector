@@ -14,3 +14,5 @@
 1559684961109	Delete resource 'Signal_Detector/Src/fatfs_platform.c'
 1559684962288	Delete resource 'Signal_Detector/Src/fatfs.c'
 1559684966696	Delete resource 'Signal_Detector/Src/sd_diskio.c'
+1559896422000	Delete 3 resources
+1559896432391	Delete resource 'Signal_Detector/Drivers/CMSIS/DSP_Lib'

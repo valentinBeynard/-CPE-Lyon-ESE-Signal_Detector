@@ -7938,3 +7938,290 @@
 2019-06-07 08:53:27,037 [DEBUG] MainPanel:706 - Start propertyChange MainPanel : End_Generate_Project
 2019-06-07 08:53:27,037 [DEBUG] MainPanel:779 - End propertyChange MainPanel : End_Generate_Project
 2019-06-07 08:53:27,037 [DEBUG] MXPropertyChangeSupport:47 - End MXSystem firePropertyChange: End_Generate_Project old
+2019-06-07 11:02:02,293 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2342,5,315x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(B2)-PE6 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [DCMI_D7] DCMI_D7 (DCMI Slave 8 bits External Synchro)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:02,294 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,294 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,405 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2328,5,343x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(C8)-PG10 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [SAI2_SDB [WM8994ECS/R_ADCDAT1]] SAI2_SD_B (no mode)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:02,406 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,406 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,427 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2156,2339,343x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(C8)-PG10 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [SAI2_SDB [WM8994ECS/R_ADCDAT1]] SAI2_SD_B (no mode)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:02,427 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,427 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,451 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2328,5,343x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(C8)-PG10 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [SAI2_SDB [WM8994ECS/R_ADCDAT1]] SAI2_SD_B (no mode)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:02,452 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,452 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,497 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2336,5,327x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(D8)-PK3 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_BL_CTRL [STLD40DPUR_EN]] GPIO_Output (no mode)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:02,497 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,497 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,522 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,117x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(E7)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,522 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,522 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,636 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2438,5,124x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(J10)-VSS : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,636 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,636 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,677 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2437,5,125x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(H11)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,677 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,677 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,695 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2588,2512,125x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(H11)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,695 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,695 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,715 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2425,5,149x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G11)-VDDUSB : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,715 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,715 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,756 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2438,5,123x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(F10)-VSS : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,757 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,757 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,777 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,117x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(E9)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,777 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,777 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:02,798 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,117x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(E8)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:02,799 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:02,799 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:10,991 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2342,5,315x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M15)-PH12 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [DCMI_D3] DCMI_D3 (DCMI Slave 8 bits External Synchro)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:10,991 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:10,991 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,020 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2396,5,208x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M12)-PG3 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [EXT_RST] GPIO_Output (no mode)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:11,020 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,021 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,045 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2287,5,426x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M9)-PJ4 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_R5 [RK043FN48H-CT672B_R5]] LTDC_R5 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:11,046 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,046 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,070 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2288,5,424x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(N7)-PG0 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [FMC_A10 [MT48LC4M32B2B5-6A_A10]] FMC_A10 (SDRAM 1:Address 12 bits)</li></ul><br><div><body></html>]
+2019-06-07 11:02:11,070 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,070 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,092 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2332,5,335x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(N5)-PC4 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [RMII_RXD0 [LAN8742A-CZ-TR_RXD0]] ETH_RXD0 (no mode)</li></ul><br><div><body></html>]
+2019-06-07 11:02:11,092 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,092 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,181 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2332,5,335x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(N5)-PC4 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [RMII_RXD0 [LAN8742A-CZ-TR_RXD0]] ETH_RXD0 (no mode)</li></ul><br><div><body></html>]
+2019-06-07 11:02:11,181 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,181 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,483 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,117x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(J6)-VSS : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,483 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,483 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,503 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2452,2530,117x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(J6)-VSS : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,503 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,503 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,561 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(H5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,561 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,562 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,578 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2416,2502,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(H5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,578 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,578 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,596 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2416,2502,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(H5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,596 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,596 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,635 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,635 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,636 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,653 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2417,2478,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,653 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,653 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,670 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2417,2478,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,670 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,670 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,688 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2417,2478,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,688 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,688 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,706 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2417,2478,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,706 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,706 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,724 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2417,2478,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,724 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,724 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,890 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,890 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,890 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,908 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2417,2464,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,908 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,909 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,928 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(H5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,928 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,928 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,948 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,117x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(J5)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,949 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,949 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:11,968 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2441,5,118x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(K6)-VSS : Power</h4><br><div><body></html>]
+2019-06-07 11:02:11,968 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:11,968 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,030 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2297,5,406x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M8)-PF15 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [FMC_A9 [MT48LC4M32B2B5-6A_A9]] FMC_A9 (SDRAM 1:Address 12 bits)</li></ul><br><div><body></html>]
+2019-06-07 11:02:12,030 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,030 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,052 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2287,5,426x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M9)-PJ4 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_R5 [RK043FN48H-CT672B_R5]] LTDC_R5 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:12,052 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,052 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,070 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2098,2617,426x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M9)-PJ4 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_R5 [RK043FN48H-CT672B_R5]] LTDC_R5 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:12,070 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,070 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,088 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2098,2617,426x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M9)-PJ4 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_R5 [RK043FN48H-CT672B_R5]] LTDC_R5 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:12,088 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,088 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,166 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2304,5,391x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(N9)-PE8 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [FMC_D5 [MT48LC4M32B2B5-6A_DQ5]] FMC_D5 (SDRAM 1:Data 16 bits)</li></ul><br><div><body></html>]
+2019-06-07 11:02:12,166 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,166 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,227 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2264,5,472x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(P8)-PF11 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [FMC_SDNRAS [MT48LC4M32B2B5-6A_RAS]] FMC_SDNRAS (SDRAM 1:Address 12 bits)</li></ul><br><div><body></html>]
+2019-06-07 11:02:12,227 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,227 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,249 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2287,5,426x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(P7)-PJ2 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_R3 [RK043FN48H-CT672B_R3]] LTDC_R3 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:12,250 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,250 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,333 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2287,5,426x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(P7)-PJ2 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_R3 [RK043FN48H-CT672B_R3]] LTDC_R3 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:12,333 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,333 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,847 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2232,5,535x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(M11)-PD13 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [QSPI_D3 [N25Q128A13EF840E_DQ3]] QUADSPI_BK1_IO3 (QuadSPI Mode Bank1 with Quad SPI Lines)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:12,847 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,848 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,882 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2287,5,426x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(K12)-PJ6 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_R7 [RK043FN48H-CT672B_R7]] LTDC_R7 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:12,882 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,883 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:12,906 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2438,5,124x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(J11)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:12,906 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:12,906 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:53,950 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2385,5,230x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(B10)-PJ12 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [OTG_FS_VBUS] GPIO_Input (no mode)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:53,950 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:53,950 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:53,970 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2442,5,116x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(F9)-VSS : Power</h4><br><div><body></html>]
+2019-06-07 11:02:53,970 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:53,970 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:54,011 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2438,5,124x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(J10)-VSS : Power</h4><br><div><body></html>]
+2019-06-07 11:02:54,011 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:54,011 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:54,031 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2438,5,124x43,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(J11)-VDD : Power</h4><br><div><body></html>]
+2019-06-07 11:02:54,031 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:54,031 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:54,053 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2285,5,429x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(H12)-PJ8 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [LCD_G1 [RK043FN48H-CT672B_G1]] LTDC_G1 (Display Type RGB888 (24 bits))</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:54,053 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:54,053 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:54,075 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2383,5,233x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(G14)-PC8 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li>SDMMC1_D0 (Mode SD 4 bits Wide bus)</li></ul><br><div><body></html>]
+2019-06-07 11:02:54,075 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:54,075 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:54,339 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2342,5,315x104,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(C11)-PD3 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [DCMI_D5] DCMI_D5 (DCMI Slave 8 bits External Synchro)</li></ul><i>&#60Ctrl+Click&#62 To Show Alternate(s)</i><br><br><div><body></html>]
+2019-06-07 11:02:54,339 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:54,339 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 11:02:54,363 [DEBUG] PanelToolTipUI:433 - paint: com.st.components.swing.Popup[,2243,5,514x89,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@2bdeeafd,flags=16777226,maximumSize=,minimumSize=,preferredSize=,tipText=<html><body><div style="margin-left:10px"><h4 style="margin-bottom:0px">(A5)-PE1 :  <img src=file:/D:/STM32CubeIDE_1.0.0/STM32CubeIDE/plugins/com.st.stm32cube.common.mx_1.0.0.201904230831/db/plugins/pinoutconfig/images/black_pin_48.png align=bottom width="24" height="24"></h4><ul style="margin-left:15px"><li> [FMC_NBL1 [MT48LC4M32B2B5-6A_DQM1]] FMC_NBL1 (SDRAM 1:Byte enable 16-bit byte enable)</li></ul><br><div><body></html>]
+2019-06-07 11:02:54,363 [DEBUG] PanelToolTipUI:434 - paint object: null
+2019-06-07 11:02:54,363 [DEBUG] PanelToolTipUI:437 - paint: regular popup, no contextual help
+2019-06-07 14:20:46,141 [DEBUG] MicroXplorer:577 - java.lang.Exception: Updater error	at com.st.microxplorer.plugins.thirdparty.engine.IntegrityCheckThread.getUpdaterThirdPartyList(IntegrityCheckThread.java:239)	at com.st.microxplorer.plugins.thirdparty.engine.IntegrityCheckThread.run(IntegrityCheckThread.java:61)Error when trying to rename log file to backup one.
+2019-06-07 14:20:46,154 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:20:46,165 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:20:46,177 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:20:46,188 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,661 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,674 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,686 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,698 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,710 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,721 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,732 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,746 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,759 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,772 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,783 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:22:47,794 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,728 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,741 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,757 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,768 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,780 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,792 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,805 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,816 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,827 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,838 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,849 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,860 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,871 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,882 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,893 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,904 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,914 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:25:29,934 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:47,971 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:47,984 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:47,995 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,005 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,016 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,027 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,038 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,049 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,059 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,070 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,080 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:27:48,091 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,571 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,585 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,596 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,608 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,620 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,632 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,643 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,654 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,667 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,678 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,689 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:29:05,701 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,007 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,019 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,031 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,042 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,053 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,063 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,073 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,084 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,095 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,105 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,118 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:30:55,138 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,439 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,454 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,466 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,477 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,488 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,499 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,510 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,525 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,536 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,547 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,559 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 14:34:14,571 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,804 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,816 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,832 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,843 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,854 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,866 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,877 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,888 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,901 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,914 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,935 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,947 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,959 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,971 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,982 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:40,993 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:41,004 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:10:41,016 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,734 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,745 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,758 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,770 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,780 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,791 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,802 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,812 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,823 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,835 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,847 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:12:42,860 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,845 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,857 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,869 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,881 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,892 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,903 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,914 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,925 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,936 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,948 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,959 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
+2019-06-07 15:21:43,970 [DEBUG] MicroXplorer:577 - Error when trying to rename log file to backup one.
