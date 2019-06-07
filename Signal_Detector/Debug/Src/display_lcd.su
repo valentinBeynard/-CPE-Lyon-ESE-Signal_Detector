@@ -1,7 +1,9 @@
-display_lcd.c:66:6:Init_Display	8	static
+display_lcd.c:66:6:Init_Display	16	static
 display_lcd.c:96:6:Display_Render	8	static
-display_lcd.c:116:6:Draw_GUI	16	static
+display_lcd.c:116:6:Draw_GUI	24	static
 display_lcd.c:144:6:Plot_Signal	32	static
-display_lcd.c:174:6:active_button	0	static
-display_lcd.c:189:6:TouchScreen_Polling	40	static
-display_lcd.c:218:9:get_current_plot_ID	0	static
+display_lcd.c:174:6:Plot_Threshold	24	static
+display_lcd.c:187:6:Draw_Signal_Marker	16	static
+display_lcd.c:202:6:active_button	24	static
+display_lcd.c:217:6:TouchScreen_Polling	24	static
+display_lcd.c:246:9:get_current_plot_ID	4	static

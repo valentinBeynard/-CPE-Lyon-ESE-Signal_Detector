@@ -1,73 +1,53 @@
-23:59:38 **** Incremental Build of configuration Debug for project Signal_Detector ****
+09:48:54 **** Incremental Build of configuration Debug for project Signal_Detector ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP" -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/Components" -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Utilities/Fonts" -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/signal_handler.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP" -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/Components" -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Utilities/Fonts" -O2 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signal_handler.d" -MT"Src/signal_handler.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signal_handler.o"
-In file included from ../Src/signal_handler.c:7:0:
-../Src/signal_handler.h:33:1: warning: '__packed__' attribute ignored [-Wattributes]
- }SIGNALS_PCK;
- ^
+arm-none-eabi-gcc "../Src/signal_handler.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Utilities/Fonts" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Inc -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/Components" -I../Drivers/CMSIS/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP" -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signal_handler.d" -MT"Src/signal_handler.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signal_handler.o"
 ../Src/signal_handler.c: In function 'Init_Sampling':
-../Src/signal_handler.c:75:27: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
-  HAL_ADC_Start_DMA(hadc1, samples_pck.sampling_buff, SAMPLES_NBR);
-                           ^~~~~~~~~~~
+../Src/signal_handler.c:88:27: warning: passing argument 2 of 'HAL_ADC_Start_DMA' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  HAL_ADC_Start_DMA(hadc1, sampling_buff, SAMPLES_NBR);
+                           ^~~~~~~~~~~~~
 In file included from ../Inc/stm32f7xx_hal_conf.h:251:0,
                  from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
                  from ../Inc/main.h:31,
                  from ../Src/signal_handler.h:11,
                  from ../Src/signal_handler.c:7:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:630:19: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint8_t * {aka volatile unsigned char *}'
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:630:19: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
  HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length);
                    ^~~~~~~~~~~~~~~~~
-../Src/signal_handler.c: In function 'signals_analyse':
-../Src/signal_handler.c:102:11: warning: pointer targets in passing argument 1 of 'strncpy' differ in signedness [-Wpointer-sign]
-   strncpy(signals_pck.raw_signal, samples_pck.sampling_buff, SAMPLES_NBR);
-           ^~~~~~~~~~~
-In file included from ../Src/signal_handler.h:13:0,
-                 from ../Src/signal_handler.c:7:
-d:\stm32cubeide_1.0.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\string.h:44:8: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
- char  *strncpy (char *__restrict, const char *__restrict, size_t);
-        ^~~~~~~
-../Src/signal_handler.c:102:35: warning: passing argument 2 of 'strncpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-   strncpy(signals_pck.raw_signal, samples_pck.sampling_buff, SAMPLES_NBR);
-                                   ^~~~~~~~~~~
-In file included from ../Src/signal_handler.h:13:0,
-                 from ../Src/signal_handler.c:7:
-d:\stm32cubeide_1.0.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\string.h:44:8: note: expected 'const char * restrict' but argument is of type 'volatile uint8_t * {aka volatile unsigned char *}'
- char  *strncpy (char *__restrict, const char *__restrict, size_t);
-        ^~~~~~~
 ../Src/signal_handler.c: In function 'crosscorrelation':
-../Src/signal_handler.c:184:19: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
+../Src/signal_handler.c:224:19: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
    norm = (float) (sqrt(somme_ref) * sqrt(somme_comp));
                    ^~~~
-../Src/signal_handler.c:184:19: warning: incompatible implicit declaration of built-in function 'sqrt'
-../Src/signal_handler.c:184:19: note: include '<math.h>' or provide a declaration of 'sqrt'
-../Src/signal_handler.c: In function 'disable_signal_display':
-../Src/signal_handler.c:217:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-In file included from ../Src/main.c:30:0:
-../Src/signal_handler.h:33:1: warning: '__packed__' attribute ignored [-Wattributes]
- }SIGNALS_PCK;
- ^
-../Src/main.c: In function 'main':
-../Src/main.c:267:10: warning: implicit declaration of function 'get_current_plot_ID' [-Wimplicit-function-declaration]
-   switch(get_current_plot_ID())
-          ^~~~~~~~~~~~~~~~~~~
+../Src/signal_handler.c:224:19: warning: incompatible implicit declaration of built-in function 'sqrt'
+../Src/signal_handler.c:224:19: note: include '<math.h>' or provide a declaration of 'sqrt'
 arm-none-eabi-gcc -o "Signal_Detector.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Signal_Detector.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Signal_Detector.elf
  
 arm-none-eabi-objdump -h -S  Signal_Detector.elf  > "Signal_Detector.list"
 arm-none-eabi-size   Signal_Detector.elf 
    text	   data	    bss	    dec	    hex	filename
-  39856	    176	 267064	 307096	  4af98	Signal_Detector.elf
+  64536	    284	  19764	  84584	  14a68	Signal_Detector.elf
 Finished building: default.size.stdout
  
 Finished building: Signal_Detector.list
  
-23:59:49 **** Incremental Build of configuration Debug for project Signal_Detector ****
+09:49:02 **** Incremental Build of configuration Debug for project Signal_Detector ****
 make -j8 all 
 arm-none-eabi-size   Signal_Detector.elf 
    text	   data	    bss	    dec	    hex	filename
-  39856	    176	 267064	 307096	  4af98	Signal_Detector.elf
+  64536	    284	  19764	  84584	  14a68	Signal_Detector.elf
+Finished building: default.size.stdout
+ 
+09:49:10 **** Incremental Build of configuration Debug for project Signal_Detector ****
+make -j8 all 
+arm-none-eabi-size   Signal_Detector.elf 
+   text	   data	    bss	    dec	    hex	filename
+  64536	    284	  19764	  84584	  14a68	Signal_Detector.elf
+Finished building: default.size.stdout
+ 
+09:49:17 **** Incremental Build of configuration Debug for project Signal_Detector ****
+make -j8 all 
+arm-none-eabi-size   Signal_Detector.elf 
+   text	   data	    bss	    dec	    hex	filename
+  64536	    284	  19764	  84584	  14a68	Signal_Detector.elf
 Finished building: default.size.stdout
  

@@ -171,6 +171,34 @@ void Plot_Signal(uint8_t *buffer, uint16_t nbr_pts)
 
 }
 
+void Plot_Threshold(uint8_t th)
+{
+	float th_f = 0;
+
+	th_f = th;
+	th_f = (th_f / 0xFF);
+	th_f = (1 - th_f);
+
+	BSP_LCD_SetTextColor(LCD_COLOR_RED);
+
+	BSP_LCD_DrawLine(PLOT_X, (uint16_t)(PLOT_Y + th_f * 0xFF), PLOT_X + PLOT_WIDTH, (uint16_t)(PLOT_Y + th_f * 0xFF));
+}
+
+void Draw_Signal_Marker(SIGNAL_STATE signal_state)
+{
+	if(SIGNAL_HERE)
+	{
+		BSP_LCD_SetTextColor(LCD_COLOR_RED);
+	}
+	else
+	{
+		BSP_LCD_SetTextColor(LCD_COLOR_BLUE);
+	}
+
+	BSP_LCD_FillCircle(15, 15, 10);
+
+}
+
 void active_button(uint8_t index)
 {
 	for(int j = 0 ; j < NUMBER_OF_BUTTON ; j++)

@@ -78,12 +78,20 @@ typedef struct
 	uint8_t* text;
 }GUI_Button;
 
+typedef enum
+{
+	NO_SIGNAL = 0,
+	SIGNAL_HERE
+}SIGNAL_STATE;
+
 void Init_Display(void);
 void Display_Render(void);
 void Plot_Signal(uint8_t *, uint16_t);
+void Plot_Threshold(uint8_t th);
 void TouchScreen_Polling(void);
 void Draw_GUI(void);
 void active_button(uint8_t index);
+void Draw_Signal_Marker(SIGNAL_STATE signal_state);
 
 
 #endif /* DISPLAY_LCD_H_ */

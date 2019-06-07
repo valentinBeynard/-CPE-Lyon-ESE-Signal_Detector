@@ -14,19 +14,32 @@
 ##########################################################################
 */
 
-uint8_t atest[SAMPLES_NBR];
+volatile uint32_t sampling_buff[SAMPLES_NBR];
+uint8_t is_ready;
 
-volatile SAMPLES_PCK samples_pck = { {0}, 0};
+uint8_t raw_signal[SAMPLES_NBR];
+uint8_t ref_signal[SAMPLES_NBR];
+uint8_t corr_func[2 * SAMPLES_NBR - 1];
+uint8_t ref_sampled;
+uint8_t result_ready;
+uint8_t corr_max;
+uint16_t sample_corr_max;
 
-SIGNALS_PCK signals_pck =
-			{
-					{0},
-					{0},
-					{0},
-					0,
-					0,
-					0
-			};
+uint8_t ref_threshold = 0;
+
+uint8_t signal_detected = 0;
+
+//volatile SAMPLES_PCK samples_pck = { {0}, 0};
+//
+//SIGNALS_PCK signals_pck =
+//			{
+//					{0},
+//					{0},
+//					0,
+//					0,
+//					0,
+//					0
+//			};
 
 
 uint8_t display_ready = 0;
@@ -39,7 +52,7 @@ uint8_t display_ready = 0;
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc1)
 {
-	samples_pck.is_ready = 1;
+	is_ready = 1;
 }
 
 
@@ -72,42 +85,69 @@ void Init_Sampling(ADC_HandleTypeDef * hadc1)
 //	signals_pck->sample_corr_max = 0;
 
 	HAL_ADC_Start(hadc1);
-	HAL_ADC_Start_DMA(hadc1, samples_pck.sampling_buff, SAMPLES_NBR);
+	HAL_ADC_Start_DMA(hadc1, sampling_buff, SAMPLES_NBR);
 
 }
 
 void signal_handler_process()
 {
-	if(samples_pck.is_ready == 1)
+	if(is_ready == 1)
 	{
 		signals_analyse();
 		display_ready = 1;
-		samples_pck.is_ready = 0;
+		is_ready = 0;
 	}
 }
 
 void signals_analyse()
 {
-	if(signals_pck.ref_sampled == 0)
+	if(ref_sampled == 0)
 	{
-		//strncpy(signals_pck.ref_signal, samples_pck.sampling_buff, SAMPLES_NBR);
+		//memset(ref_signal, sampling_buff, SAMPLES_NBR);
 		for(int i = 0 ; i < SAMPLES_NBR ; i++)
 		{
-			signals_pck.ref_signal[i] = 0;//samples_pck.sampling_buff[i];
+			ref_signal[i] = sampling_buff[i];
 		}
-		signals_pck.ref_sampled = 1;
+		crosscorrelation(ref_signal, ref_signal);
+		ref_threshold = corr_max;
+		ref_sampled = 1;
 	}
 	else
 	{
-		strncpy(signals_pck.raw_signal, samples_pck.sampling_buff, SAMPLES_NBR);
+		//strncpy(raw_signal, sampling_buff, SAMPLES_NBR);
 
-		//crosscorrelation(signals_pck.ref_signal, signals_pck.raw_signal);
+		for(int i = 0 ; i < SAMPLES_NBR ; i++)
+		{
+			raw_signal[i] = sampling_buff[i];//sampling_buff[i];
+		}
 
+		//crosscorrelation(ref_signal, raw_signal);
+		search_signal();
 
 	}
 
 
 }
+
+void search_signal()
+{
+	uint16_t th = (THRESHOLD_RATIO * ref_threshold);
+	if(signal_detected == 0)
+	{
+		if(corr_max >= th)
+		{
+			signal_detected = 1;
+		}
+	}
+	else
+	{
+		if(corr_max < th)
+		{
+			signal_detected = 0;
+		}
+	}
+}
+
 
 void crosscorrelation(uint8_t* ref_signal, uint8_t* comp_signal)
 {
@@ -123,8 +163,8 @@ void crosscorrelation(uint8_t* ref_signal, uint8_t* comp_signal)
 	/*Copy signals*/
 	/* Pad the smaller sequence with zero*/
 
-	comp_signal_2[0] = (float)((comp_signal[0] - 0x88))/0x88;
-	ref_signal_2[0] = (float)((ref_signal[0] - 0x88))/0x88;
+	comp_signal_2[0] = (float)((comp_signal[0] - 0x7F))/0x7F;
+	ref_signal_2[0] = (float)((ref_signal[0] - 0x7F))/0x7F;
 
 	somme_ref=ref_signal_2[0]*ref_signal_2[0];
 	somme_comp=comp_signal_2[0]*comp_signal_2[0];
@@ -132,9 +172,9 @@ void crosscorrelation(uint8_t* ref_signal, uint8_t* comp_signal)
 	/* Reverse Signal Array to perform correlation x(n-l) */
 	/* and remove offset for each signals */
 	for(j=1;j<SAMPLES_NBR;j++){
-		comp_signal_2[j] = (float)((comp_signal[j] - 0x88))/0x88;
+		comp_signal_2[j] = (float)((comp_signal[j] - 0x7F))/0x7F;
 		somme_comp+=comp_signal_2[j]*comp_signal_2[j];
-		ref_signal_2[j] = (float)((ref_signal[j] - 0x88))/0x88;
+		ref_signal_2[j] = (float)((ref_signal[j] - 0x7F))/0x7F;
 		somme_ref+=ref_signal_2[j]*ref_signal_2[j];
 	}
 	for(i= SAMPLES_NBR ;i<p;i++){
@@ -184,21 +224,25 @@ void crosscorrelation(uint8_t* ref_signal, uint8_t* comp_signal)
 		norm = (float) (sqrt(somme_ref) * sqrt(somme_comp));
 		for(k = 0 ; k < p ; k++)
 		{
-			y[k] = 0x88 * (y[k]/ norm) + 0x88;
-			signals_pck.corr_func[k] = (uint8_t) ( y[k] );
-			signals_pck.corr_func[k] = 0xFF * signals_pck.corr_func[k];
+			y[k] = 0x7F * (y[k]/ norm) + 0x7F;
+			corr_func[k] = (uint8_t) ( y[k] );
+			corr_func[k] = 0xFF * corr_func[k];
+			if(y[k] > 1)
+			{
+				y[k] = 1;
+			}
 		}
 
-		signals_pck.corr_max = signals_pck.corr_func[0];
+		corr_max = corr_func[0];
 
 		//l=0;
 
 		for(k=1;k<p;k++)
 		{
-			if(signals_pck.corr_func[k] > signals_pck.corr_max)
+			if(corr_func[k] > corr_max)
 			{
-				signals_pck.corr_max = signals_pck.corr_func[k];
-				signals_pck.sample_corr_max = k;
+				corr_max = corr_func[k];
+				sample_corr_max = k;
 				//l=k;
 			}
 
@@ -211,9 +255,19 @@ uint8_t can_display()
 	return display_ready;
 }
 
-uint8_t disable_signal_display()
+void disable_signal_display()
 {
 	display_ready = 0;
+}
+
+uint8_t get_threshold()
+{
+	return THRESHOLD_RATIO * ref_threshold;
+}
+
+uint8_t is_signal_here()
+{
+	return signal_detected;
 }
 
 uint8_t* get_signal_data(SIGNAL_ID id)
@@ -223,13 +277,13 @@ uint8_t* get_signal_data(SIGNAL_ID id)
 	switch(id)
 	{
 	case INPUT:
-		ret = signals_pck.raw_signal;
+		ret = raw_signal;
 		break;
 	case REF:
-		ret = signals_pck.ref_signal;
+		ret = ref_signal;
 		break;
 	default:
-		ret = (signals_pck.corr_func + (signals_pck.sample_corr_max - 200));
+		ret = (corr_func + (sample_corr_max - 200));
 		break;
 	}
 

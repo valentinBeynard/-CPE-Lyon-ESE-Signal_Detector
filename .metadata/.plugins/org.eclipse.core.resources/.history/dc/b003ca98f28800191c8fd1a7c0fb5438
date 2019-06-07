@@ -27,6 +27,8 @@
 #include "stlogo.h"
 #include "stdlib.h"
 #include "math.h"
+#include "signal_handler.h"
+
 
 /* USER CODE END Includes */
 
@@ -47,6 +49,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
+DMA_HandleTypeDef hdma_adc1;
 
 DCMI_HandleTypeDef hdcmi;
 
@@ -72,21 +75,12 @@ SDRAM_HandleTypeDef hsdram1;
 #define M_signal_pts	512
 
 
-int i = 0,nb_acquisition = 0;
-uint8_t ADC_value,reference[M_signal_pts],comparaison[M_signal_pts];
-
-float y[M_signal_pts + M_signal_pts - 1];
-uint8_t corr_func[M_signal_pts + M_signal_pts - 1];
-uint16_t corr_max_abs = 0;
-uint16_t max;
-int l;
-short detection=1;
-char can_display = 0 ;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_DCMI_Init(void);
 static void MX_DMA2D_Init(void);
 static void MX_FMC_Init(void);
@@ -105,104 +99,8 @@ static void MX_TIM3_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void declencher_acquisition(){
-	i=0;
-	HAL_ADC_Start(&hadc1);
+	//HAL_ADC_Start(&hadc1);
 	HAL_TIM_Base_Start_IT(&htim7);
-}
-
-void crosscorrelation(uint8_t* ref_signal, uint8_t* comp_signal)
-{
-
-	int i,j,k;
-	int p = M_signal_pts + M_signal_pts -1;
-
-	float comp_f[p],comp_f_2[p], ref_signal_2[p],comp_signal_2[p];
-	float somme_ref,somme_comp;
-	float norm;
-	float test = 0;
-
-	/*Copy signals*/
-	/* Pad the smaller sequence with zero*/
-
-	comp_signal_2[0] = (float)((comp_signal[0] - 0x88))/0x88;
-	ref_signal_2[0] = (float)((ref_signal[0] - 0x88))/0x88;
-
-	somme_ref=ref_signal_2[0]*ref_signal_2[0];
-	somme_comp=comp_signal_2[0]*comp_signal_2[0];
-
-	/* Reverse Signal Array to perform correlation x(n-l) */
-	/* and remove offset for each signals */
-	for(j=1;j<M_signal_pts;j++){
-		comp_signal_2[j] = (float)((comp_signal[j] - 0x88))/0x88;
-		somme_comp+=comp_signal_2[j]*comp_signal_2[j];
-		ref_signal_2[j] = (float)((ref_signal[j] - 0x88))/0x88;
-		somme_ref+=ref_signal_2[j]*ref_signal_2[j];
-	}
-	for(i= M_signal_pts ;i<p;i++){
-		comp_signal_2[i]=0;
-	}
-	for(i= M_signal_pts;i<p;i++){
-		ref_signal_2[i]=0;
-	}
-
-  /*folding h(n) to h(-n)*/
-	y[0]=0;
-	comp_f[0]=comp_signal_2[0];
-	/* Reverse Signal Array to perform correlation x(n-l) */
-	/* and remove offset for each signals */
-	for(j=1;j<p;j++){ /*folding h(n) to h(-n)*/
-		comp_f[j]=comp_signal_2[p-j];
-	}
-
-	/*Circular convolution*/
-	for(i=0;i<p;i++){
-		y[0] += ref_signal_2[i] * comp_f[i];
-	}
-
-
-	for(k=1;k<p;k++)
-	{
-		y[k]=0;
-
-		/*circular shift*/
-		for(j=1;j<p;j++){
-			comp_f_2[j] = comp_f[j-1];
-		}
-
-		comp_f_2[0] = comp_f[p-1];
-
-		/*Circular convolution*/
-		for(i=0;i<p;i++)
-		{
-			comp_f[i] = comp_f_2[i];
-			y[k] += ref_signal_2[i] * comp_f_2[i];
-		}
-
-	}
-
-
-		/* Normalize Correlation function */
-		norm = (float) (sqrt(somme_ref) * sqrt(somme_comp));
-		for(k = 0 ; k < p ; k++)
-		{
-			y[k] = 0x88 * (y[k]/ norm) + 0x88;
-			corr_func[k] = (uint8_t) ( y[k] );
-			corr_func[k] = 0xFF * corr_func[k];
-		}
-
-		max=corr_func[0];
-		l=0;
-		for(k=1;k<p;k++)
-		{
-			if(corr_func[k]>max)
-			{
-				max=corr_func[k];
-				corr_max_abs = k;
-				l=k;
-			}
-
-		}
-
 }
 
 
@@ -211,53 +109,79 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 	if(htim->Instance==TIM7)
 	{
 
-		//HAL_ADC_PollForConversion(&hadc1,10);
 
-		HAL_ADC_Start(&hadc1);
-		ADC_value = HAL_ADC_GetValue(&hadc1);
-		HAL_ADC_Stop(&hadc1);
-		if (nb_acquisition==0){
-				reference[i]=ADC_value;
-				if( (i % 400 == 0) && (i != 0))
-				{
-					can_display = 1;
-					//HAL_TIM_Base_Stop_IT(&htim7);
-				}
-				else
-				{
-					can_display = 0;
-				}
-		}else{
-				comparaison[i]=ADC_value;
-				if( (i % 400 == 0) && (i != 0))
-				{
-					can_display = 1;
-					//HAL_TIM_Base_Stop_IT(&htim7);
-				}
-				else
-				{
-					can_display = 0;
-				}
-		}
+//		if (nb_acquisition==0){
+//				reference[i]=adc_last_value;
+//		}else{
+//				comparaison[i]=adc_last_value;
+//
+//				/* Add value in buffer for displaying */
+//				display_buff[display_buff_ptr] = adc_last_value;
+//				display_buff_ptr++;
+//
+//				/* Indicate display_buff ready for displaying */
+//				if( display_buff_ptr >= PLOT_WIDTH)
+//				{
+//					display_buff_ptr = 0;
+//					display_ready = 1;
+//					//HAL_TIM_Base_Stop_IT(&htim7);
+//				}
+//
+//		}
+//
+//		i++;
+//		if (i>= M_signal_pts){
+//			HAL_TIM_Base_Stop_IT(&htim7);
+//			//HAL_ADC_Stop(&hadc1);
+//			if (nb_acquisition>0){
+//				//crosscorrelation(reference,reference);
+//			}
+//			nb_acquisition++;
+//			declencher_acquisition();
+//		}
 
-
-		i++;
-		if (i>= M_signal_pts){
-			HAL_TIM_Base_Stop_IT(&htim7);
-			HAL_ADC_Stop(&hadc1);
-			if (nb_acquisition>0){
-				crosscorrelation(reference,reference);
-			}
-			nb_acquisition++;
-			//declencher_acquisition();
-		}
+//		HAL_ADC_Start(&hadc1);
+//
+//		HAL_ADC_PollForConversion(&hadc1,10);
+//
+//		ADC_value = HAL_ADC_GetValue(&hadc1);
+//		if (nb_acquisition==0){
+//				reference[i]=ADC_value;
+//		}else{
+//				comparaison[i]=ADC_value;
+//
+//				/* Add value in buffer for displaying */
+//				display_buff[display_buff_ptr] = ADC_value;
+//				display_buff_ptr++;
+//
+//				/* Indicate display_buff ready for displaying */
+//				if( display_buff_ptr >= PLOT_WIDTH)
+//				{
+//					display_buff_ptr = 0;
+//					display_ready = 1;
+//					//HAL_TIM_Base_Stop_IT(&htim7);
+//				}
+//
+//		}
+//
+//		HAL_ADC_Stop(&hadc1);
+//		i++;
+//		if (i>= M_signal_pts){
+//			HAL_TIM_Base_Stop_IT(&htim7);
+//			//HAL_ADC_Stop(&hadc1);
+//			if (nb_acquisition>0){
+//				//crosscorrelation(reference,reference);
+//			}
+//			nb_acquisition++;
+//			declencher_acquisition();
+//		}
 
 
 
 	}
 	else if(htim->Instance==TIM3)
 	{
-		//TouchScreen_Polling();
+		TouchScreen_Polling();
 	}
 }
 /* USER CODE END 0 */
@@ -297,6 +221,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_DCMI_Init();
   MX_DMA2D_Init();
   MX_FMC_Init();
@@ -314,14 +239,19 @@ int main(void)
   /* Draw Bitmap */
   //BSP_LCD_DrawBitmap((BSP_LCD_GetXSize() - 80) / 2, 65, (uint8_t *)stlogo);
 
-  //Display_Render();
+  Display_Render();
+  Draw_GUI();
 
-  /* Periodic Check of touchscreen) */
-  //HAL_TIM_Base_Start_IT(&htim3);
+
+
+  Init_Sampling(&hadc1);
 
   //declencher_acquisition();
+
+  /* Periodic Check of touchscreen) */
+  HAL_TIM_Base_Start_IT(&htim3);
   /* USER CODE END 2 */
-  Display_Render();
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -329,16 +259,29 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	signal_handler_process();
 
-/*
-	if(can_display == 1)
+	if(can_display() == 1)
 	{
 		//Plot_Signal( (corr_func + (corr_max_abs-200)), 400);
-		//Plot_Signal( reference , 400);
-		can_display = 0;
-	}*/
+		switch(get_current_plot_ID())
+		{
+			case INPUT_PLOT:
+				Plot_Signal( get_signal_data(INPUT) , DISPLAY_BUFF_SIZE);
+				break;
+			case REF_PLOT:
+				Plot_Signal( get_signal_data(REF) , DISPLAY_BUFF_SIZE);
+				break;
+			case CORR_PLOT:
+				Plot_Signal( get_signal_data(CORR) , DISPLAY_BUFF_SIZE);
+				Plot_Threshold(get_threshold());
+				break;
+		}
 
-	//HAL_Delay(10);
+		disable_signal_display();
+	}
+
+	//HAL_Delay(20);
   }
   /* USER CODE END 3 */
 }
@@ -433,7 +376,7 @@ static void MX_ADC1_Init(void)
   /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion) 
   */
   hadc1.Instance = ADC1;
-  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV8;
   hadc1.Init.Resolution = ADC_RESOLUTION_8B;
   hadc1.Init.ScanConvMode = DISABLE;
   hadc1.Init.ContinuousConvMode = ENABLE;
@@ -442,8 +385,8 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.NbrOfConversion = 1;
-  hadc1.Init.DMAContinuousRequests = DISABLE;
-  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc1.Init.DMAContinuousRequests = ENABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SEQ_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
@@ -782,11 +725,11 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 99;
+  htim3.Init.Prescaler = 199;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim3.Init.Period = 19999;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
   {
     Error_Handler();
@@ -828,7 +771,7 @@ static void MX_TIM7_Init(void)
   htim7.Instance = TIM7;
   htim7.Init.Prescaler = 0;
   htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim7.Init.Period = 4100;
+  htim7.Init.Period = 4165;
   htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim7) != HAL_OK)
   {
@@ -881,6 +824,20 @@ static void MX_USART1_UART_Init(void)
 
 }
 
+/** 
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void) 
+{
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA2_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA2_Stream4_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream4_IRQn);
+
+}
 /* FMC initialization function */
 static void MX_FMC_Init(void)
 {

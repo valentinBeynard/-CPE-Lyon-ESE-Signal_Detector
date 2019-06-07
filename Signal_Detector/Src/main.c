@@ -274,13 +274,23 @@ int main(void)
 				break;
 			case CORR_PLOT:
 				Plot_Signal( get_signal_data(CORR) , DISPLAY_BUFF_SIZE);
+				Plot_Threshold(get_threshold());
 				break;
+		}
+
+		if(is_signal_here())
+		{
+			Draw_Signal_Marker(SIGNAL_HERE);
+		}
+		else
+		{
+			Draw_Signal_Marker(NO_SIGNAL);
 		}
 
 		disable_signal_display();
 	}
 
-	HAL_Delay(50);
+	//HAL_Delay(20);
   }
   /* USER CODE END 3 */
 }
@@ -394,7 +404,7 @@ static void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  sConfig.SamplingTime = ADC_SAMPLETIME_144CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
