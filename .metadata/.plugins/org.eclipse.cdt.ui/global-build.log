@@ -1,64 +1,33 @@
-15:27:19 **** Incremental Build of configuration Debug for project Signal_Detector ****
+10:41:18 **** Incremental Build of configuration Debug for project Signal_Detector ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/display_lcd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Utilities/Fonts" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Inc -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/Components" -I../Drivers/CMSIS/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP" -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/display_lcd.d" -MT"Src/display_lcd.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/display_lcd.o"
-In file included from ../Src/display_lcd.c:7:0:
-../Src/display_lcd.h:40:21: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
- #define INPUT_LABEL "Input Signal"
-                     ^
-../Src/display_lcd.c:50:111: note: in expansion of macro 'INPUT_LABEL'
-       { {0, INPUT_SIGNAL_X, INPUT_SIGNAL_Y, NORMAL_BUTTON_WIDTH, NORMAL_BUTTON_HEIGHT, LCD_COLOR_DARKMAGENTA, INPUT_LABEL},
-                                                                                                               ^~~~~~~~~~~
-../Src/display_lcd.h:40:21: note: (near initialization for 'button_list[0].text')
- #define INPUT_LABEL "Input Signal"
-                     ^
-../Src/display_lcd.c:50:111: note: in expansion of macro 'INPUT_LABEL'
-       { {0, INPUT_SIGNAL_X, INPUT_SIGNAL_Y, NORMAL_BUTTON_WIDTH, NORMAL_BUTTON_HEIGHT, LCD_COLOR_DARKMAGENTA, INPUT_LABEL},
-                                                                                                               ^~~~~~~~~~~
-../Src/display_lcd.h:44:19: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
- #define REF_LABEL "Ref Signal"
-                   ^
-../Src/display_lcd.c:51:103: note: in expansion of macro 'REF_LABEL'
-        {0, REF_SIGNAL_X, REF_SIGNAL_Y, NORMAL_BUTTON_WIDTH, NORMAL_BUTTON_HEIGHT, LCD_COLOR_DARKCYAN, REF_LABEL},
-                                                                                                       ^~~~~~~~~
-../Src/display_lcd.h:44:19: note: (near initialization for 'button_list[1].text')
- #define REF_LABEL "Ref Signal"
-                   ^
-../Src/display_lcd.c:51:103: note: in expansion of macro 'REF_LABEL'
-        {0, REF_SIGNAL_X, REF_SIGNAL_Y, NORMAL_BUTTON_WIDTH, NORMAL_BUTTON_HEIGHT, LCD_COLOR_DARKCYAN, REF_LABEL},
-                                                                                                       ^~~~~~~~~
-../Src/display_lcd.h:48:20: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
- #define CORR_LABEL "Correlation"
-                    ^
-../Src/display_lcd.c:52:107: note: in expansion of macro 'CORR_LABEL'
-        {0, CORR_SIGNAL_X, CORR_SIGNAL_Y, NORMAL_BUTTON_WIDTH, NORMAL_BUTTON_HEIGHT, LCD_COLOR_DARKYELLOW, CORR_LABEL}
-                                                                                                           ^~~~~~~~~~
-../Src/display_lcd.h:48:20: note: (near initialization for 'button_list[2].text')
- #define CORR_LABEL "Correlation"
-                    ^
-../Src/display_lcd.c:52:107: note: in expansion of macro 'CORR_LABEL'
-        {0, CORR_SIGNAL_X, CORR_SIGNAL_Y, NORMAL_BUTTON_WIDTH, NORMAL_BUTTON_HEIGHT, LCD_COLOR_DARKYELLOW, CORR_LABEL}
-                                                                                                           ^~~~~~~~~~
-../Src/display_lcd.c: In function 'TouchScreen_Polling':
-../Src/display_lcd.c:219:17: warning: unused variable 't' [-Wunused-variable]
-  static uint8_t t = 0;
-                 ^
-At top level:
-../Src/display_lcd.c:219:17: warning: 't' defined but not used [-Wunused-variable]
+arm-none-eabi-gcc "../Src/signal_handler.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F746xx -DDEBUG -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Utilities/Fonts" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Inc -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP/Components" -I../Drivers/CMSIS/Include -I"C:/Users/BEYNARD/Documents/GitHub/-CPE-Lyon-ESE-Signal_Detector/Signal_Detector/Drivers/BSP" -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signal_handler.d" -MT"Src/signal_handler.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signal_handler.o"
+../Src/signal_handler.c: In function 'Init_Sampling':
+../Src/signal_handler.c:103:27: warning: passing argument 2 of 'HAL_ADC_Start_DMA' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  HAL_ADC_Start_DMA(hadc1, sampling_buff, SAMPLES_NBR);
+                           ^~~~~~~~~~~~~
+In file included from ../Inc/stm32f7xx_hal_conf.h:251:0,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Src/signal_handler.h:11,
+                 from ../Src/signal_handler.c:7:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:630:19: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~
 arm-none-eabi-gcc -o "Signal_Detector.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\BEYNARD\Documents\GitHub\-CPE-Lyon-ESE-Signal_Detector\Signal_Detector\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Signal_Detector.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Signal_Detector.elf
  
 arm-none-eabi-objdump -h -S  Signal_Detector.elf  > "Signal_Detector.list"
 arm-none-eabi-size   Signal_Detector.elf 
    text	   data	    bss	    dec	    hex	filename
-  63028	    184	  11568	  74780	  1241c	Signal_Detector.elf
+  65800	    284	  15700	  81784	  13f78	Signal_Detector.elf
 Finished building: default.size.stdout
  
 Finished building: Signal_Detector.list
  
-15:27:37 **** Incremental Build of configuration Debug for project Signal_Detector ****
+10:41:35 **** Incremental Build of configuration Debug for project Signal_Detector ****
 make -j8 all 
 arm-none-eabi-size   Signal_Detector.elf 
    text	   data	    bss	    dec	    hex	filename
-  63028	    184	  11568	  74780	  1241c	Signal_Detector.elf
+  65800	    284	  15700	  81784	  13f78	Signal_Detector.elf
 Finished building: default.size.stdout
  

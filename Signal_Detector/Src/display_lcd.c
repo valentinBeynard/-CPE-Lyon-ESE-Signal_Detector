@@ -171,17 +171,12 @@ void Plot_Signal(uint8_t *buffer, uint16_t nbr_pts)
 
 }
 
-void Plot_Threshold(uint8_t th)
+void Plot_Threshold(float th_ratio)
 {
-	float th_f = 0;
-
-	th_f = th;
-	th_f = (th_f / 0xFF);
-	th_f = (1 - th_f);
 
 	BSP_LCD_SetTextColor(LCD_COLOR_RED);
 
-	BSP_LCD_DrawLine(PLOT_X, (uint16_t)(PLOT_Y + th_f * PLOT_HEIGHT), PLOT_X + PLOT_WIDTH, (uint16_t)(PLOT_Y + th_f * PLOT_HEIGHT));
+	BSP_LCD_DrawLine(PLOT_X, (uint16_t)(PLOT_Y + (1- th_ratio) * PLOT_HEIGHT), PLOT_X + PLOT_WIDTH, (uint16_t)(PLOT_Y + (1- th_ratio) * PLOT_HEIGHT));
 }
 
 void Draw_Signal_Marker(SIGNAL_STATE signal_state)
@@ -197,6 +192,26 @@ void Draw_Signal_Marker(SIGNAL_STATE signal_state)
 
 	BSP_LCD_FillCircle(15, 15, 10);
 
+}
+
+void Draw_Sampling_Target_Marker()
+{
+	BSP_LCD_SetTextColor(LCD_COLOR_LIGHTGREEN);
+	BSP_LCD_FillCircle(40, 15, 10);
+}
+
+void Update_Signal_Labal_Cnt(uint16_t cnt)
+{
+	BSP_LCD_SetTextColor(LCD_COLOR_WHITE);
+	BSP_LCD_FillRect(DETEC_CNT_X, DETEC_CNT_Y, DETEC_CNT_WIDTH, DETEC_CNT_HEIGHT);
+
+	BSP_LCD_SetTextColor(LCD_COLOR_LIGHTCYAN);
+	BSP_LCD_FillRect(DETEC_CNT_X, DETEC_CNT_Y, DETEC_CNT_WIDTH, DETEC_CNT_HEIGHT);
+	BSP_LCD_SetTextColor(LCD_COLOR_BLACK);
+	BSP_LCD_SetFont(&Font8);
+
+	sprintf(detection_label, "Signals : %d", cnt);
+	BSP_LCD_DisplayStringAt(DETEC_CNT_X + 10, DETEC_CNT_Y + 10, detection_label, LEFT_MODE);
 }
 
 void active_button(uint8_t index)

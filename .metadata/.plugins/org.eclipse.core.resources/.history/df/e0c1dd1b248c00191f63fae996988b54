@@ -1,0 +1,98 @@
+/*
+ * display_lcd.h
+ *
+ *  Created on: Jun 5, 2019
+ *      Author: BEYNARD
+ */
+
+#ifndef DISPLAY_LCD_H_
+#define DISPLAY_LCD_H_
+#include "stm32f7xx_hal.h"
+#include "stm32746g_discovery_lcd.h"
+#include "stm32746g_discovery_ts.h"
+
+#define DISPLAY_BUFF_SIZE	PLOT_WIDTH
+#define PLOT_X	20
+#define PLOT_Y	40
+#define PLOT_WIDTH	(RK043FN48H_WIDTH - 40)
+#define PLOT_HEIGHT	150
+
+#define GUI_X	PLOT_X
+#define GUI_Y	(PLOT_Y + PLOT_HEIGHT + 5)
+#define GUI_WIDTH	PLOT_WIDTH
+#define GUI_HEIGHT	80
+
+#define NORMAL_BUTTON_WIDTH	100
+#define NORMAL_BUTTON_HEIGHT	30
+
+/*
+##########################################################################
+
+			Buttons
+
+##########################################################################
+ */
+
+#define NUMBER_OF_BUTTON	3
+
+#define INPUT_SIGNAL_X	(GUI_X)
+#define INPUT_SIGNAL_Y	(GUI_Y + 10)
+#define INPUT_LABEL	"Input Signal"
+
+#define REF_SIGNAL_X	(INPUT_SIGNAL_X + NORMAL_BUTTON_WIDTH  + 10)
+#define REF_SIGNAL_Y	(GUI_Y + 10)
+#define REF_LABEL	"Ref Signal"
+
+#define CORR_SIGNAL_X	(REF_SIGNAL_X + NORMAL_BUTTON_WIDTH  + 10)
+#define CORR_SIGNAL_Y	(GUI_Y + 10)
+#define CORR_LABEL	"Correlation"
+
+/*
+##########################################################################
+
+			LABELs
+
+##########################################################################
+ */
+
+#define DETEC_CNT_X	GUI_X
+#define DETEC_CNT_Y	(CORR_SIGNAL_Y + NORMAL_BUTTON_HEIGHT + 5)
+#define DETEC_CNT_WIDTH	NORMAL_BUTTON_WIDTH
+#define DETEC_CNT_HEIGHT NORMAL_BUTTON_HEIGHT
+
+typedef enum
+{
+	INPUT_PLOT = 0,
+	REF_PLOT,
+	CORR_PLOT
+}PLOT_ID;
+
+typedef struct
+{
+	uint8_t is_active;
+	uint16_t x_pos;
+	uint16_t y_pos;
+	uint16_t width;
+	uint16_t height;
+	uint32_t color;
+	uint8_t* text;
+}GUI_Button;
+
+typedef enum
+{
+	NO_SIGNAL = 0,
+	SIGNAL_HERE
+}SIGNAL_STATE;
+
+void Init_Display(void);
+void Display_Render(void);
+void Plot_Signal(uint8_t *, uint16_t);
+void Plot_Threshold();
+void TouchScreen_Polling(void);
+void Draw_GUI(void);
+void active_button(uint8_t index);
+void Draw_Signal_Marker(SIGNAL_STATE signal_state);
+void Update_Signal_Labal_Cnt(uint16_t cnt);
+void Draw_Sampling_Target_Marker();
+
+#endif /* DISPLAY_LCD_H_ */

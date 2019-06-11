@@ -87,11 +87,12 @@ typedef enum
 void Init_Display(void);
 void Display_Render(void);
 void Plot_Signal(uint8_t *, uint16_t);
-void Plot_Threshold(uint8_t th);
+void Plot_Threshold(float th_ratio);
 void TouchScreen_Polling(void);
 void Draw_GUI(void);
 void active_button(uint8_t index);
 void Draw_Signal_Marker(SIGNAL_STATE signal_state);
-
+void Update_Signal_Labal_Cnt(uint16_t cnt);
+void Draw_Sampling_Target_Marker();
 
 #endif /* DISPLAY_LCD_H_ */

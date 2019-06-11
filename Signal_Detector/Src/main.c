@@ -74,6 +74,10 @@ SDRAM_HandleTypeDef hsdram1;
 #define N	512
 #define M_signal_pts	512
 
+#define CALIBRATION_TIME	50
+
+FSM_SH_STATE signal_handler_state = CALIBRATION_STATE;
+uint16_t calibration_time = 0;
 
 /* USER CODE END PV */
 
@@ -110,78 +114,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 	{
 
 
-//		if (nb_acquisition==0){
-//				reference[i]=adc_last_value;
-//		}else{
-//				comparaison[i]=adc_last_value;
-//
-//				/* Add value in buffer for displaying */
-//				display_buff[display_buff_ptr] = adc_last_value;
-//				display_buff_ptr++;
-//
-//				/* Indicate display_buff ready for displaying */
-//				if( display_buff_ptr >= PLOT_WIDTH)
-//				{
-//					display_buff_ptr = 0;
-//					display_ready = 1;
-//					//HAL_TIM_Base_Stop_IT(&htim7);
-//				}
-//
-//		}
-//
-//		i++;
-//		if (i>= M_signal_pts){
-//			HAL_TIM_Base_Stop_IT(&htim7);
-//			//HAL_ADC_Stop(&hadc1);
-//			if (nb_acquisition>0){
-//				//crosscorrelation(reference,reference);
-//			}
-//			nb_acquisition++;
-//			declencher_acquisition();
-//		}
-
-//		HAL_ADC_Start(&hadc1);
-//
-//		HAL_ADC_PollForConversion(&hadc1,10);
-//
-//		ADC_value = HAL_ADC_GetValue(&hadc1);
-//		if (nb_acquisition==0){
-//				reference[i]=ADC_value;
-//		}else{
-//				comparaison[i]=ADC_value;
-//
-//				/* Add value in buffer for displaying */
-//				display_buff[display_buff_ptr] = ADC_value;
-//				display_buff_ptr++;
-//
-//				/* Indicate display_buff ready for displaying */
-//				if( display_buff_ptr >= PLOT_WIDTH)
-//				{
-//					display_buff_ptr = 0;
-//					display_ready = 1;
-//					//HAL_TIM_Base_Stop_IT(&htim7);
-//				}
-//
-//		}
-//
-//		HAL_ADC_Stop(&hadc1);
-//		i++;
-//		if (i>= M_signal_pts){
-//			HAL_TIM_Base_Stop_IT(&htim7);
-//			//HAL_ADC_Stop(&hadc1);
-//			if (nb_acquisition>0){
-//				//crosscorrelation(reference,reference);
-//			}
-//			nb_acquisition++;
-//			declencher_acquisition();
-//		}
-
-
 
 	}
 	else if(htim->Instance==TIM3)
 	{
 		TouchScreen_Polling();
+		if(calibration_time < CALIBRATION_TIME)
+		{
+			calibration_time++;
+		}
 	}
 }
 /* USER CODE END 0 */
@@ -259,7 +200,21 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	signal_handler_process();
+	if(calibration_time < CALIBRATION_TIME)
+	{
+		signal_handler_process(CALIBRATION_STATE);
+	}
+	else if(calibration_time == CALIBRATION_TIME)
+	{
+		signal_handler_process(INIT_REF);
+		Draw_Sampling_Target_Marker();
+		calibration_time = CALIBRATION_TIME + 1;
+	}
+	else
+	{
+		signal_handler_process(IDLE);
+	}
+
 
 	if(can_display() == 1)
 	{
@@ -274,13 +229,14 @@ int main(void)
 				break;
 			case CORR_PLOT:
 				Plot_Signal( get_signal_data(CORR) , DISPLAY_BUFF_SIZE);
-				Plot_Threshold(get_threshold());
+				Plot_Threshold(THRESHOLD_RATIO);
 				break;
 		}
 
 		if(is_signal_here())
 		{
 			Draw_Signal_Marker(SIGNAL_HERE);
+			Update_Signal_Labal_Cnt(getSignalCnt());
 		}
 		else
 		{
@@ -290,7 +246,7 @@ int main(void)
 		disable_signal_display();
 	}
 
-	//HAL_Delay(20);
+	HAL_Delay(20);
   }
   /* USER CODE END 3 */
 }
@@ -734,7 +690,7 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 199;
+  htim3.Init.Prescaler = 199;//499;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim3.Init.Period = 19999;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

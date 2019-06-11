@@ -2,7 +2,7 @@
  * signal_handler.c
  *
  *  Created on: Jun 6, 2019
- *      Author: BEYNARD
+ *      Author: duduche
  */
 #include "signal_handler.h"
 
@@ -15,19 +15,26 @@
 */
 
 volatile uint32_t sampling_buff[SAMPLES_NBR];
-uint8_t is_ready;
+volatile uint32_t tampon_buff[SAMPLES_NBR];
+uint8_t is_busy = 0;
+uint8_t is_ready = 0;
 
 uint8_t raw_signal[SAMPLES_NBR];
 uint8_t ref_signal[SAMPLES_NBR];
 uint8_t corr_func[2 * SAMPLES_NBR - 1];
 uint8_t ref_sampled;
 uint8_t result_ready;
-uint8_t corr_max;
+uint16_t corr_max;
 uint16_t sample_corr_max;
 
-uint8_t ref_threshold = 1.0;
+uint16_t ref_threshold = 1.0;
+uint16_t ref_samples = 0;
 
 uint8_t signal_detected = 0;
+uint16_t signal_counter = 0;
+
+
+
 
 //volatile SAMPLES_PCK samples_pck = { {0}, 0};
 //
@@ -53,6 +60,14 @@ uint8_t display_ready = 0;
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc1)
 {
 	is_ready = 1;
+	if(is_busy == 0)
+	{
+		for(uint16_t i = 0 ; i < SAMPLES_NBR ; i++)
+		{
+			tampon_buff[i] = sampling_buff[i];
+		}
+		is_busy = 1;
+	}
 }
 
 
@@ -89,43 +104,69 @@ void Init_Sampling(ADC_HandleTypeDef * hadc1)
 
 }
 
-void signal_handler_process()
+void signal_handler_process(FSM_SH_STATE fsm_state)
 {
-	if(is_ready == 1)
+	if(fsm_state == CALIBRATION_STATE)
 	{
-		signals_analyse();
-		display_ready = 1;
-		is_ready = 0;
+		if(is_ready == 1)
+		{
+			target_sampling();
+			//display_ready = 1;
+			is_ready = 0;
+		}
 	}
+	else if(fsm_state == INIT_REF)
+	{
+		analyse_target();
+	}
+	else
+	{
+		if(is_ready == 1)
+		{
+			signals_analyse();
+			display_ready = 1;
+			is_ready = 0;
+		}
+	}
+
+}
+
+void target_sampling()
+{
+	/* Copy DMA Buffer Content */
+	for(int i = 0 ; i < SAMPLES_NBR ; i++)
+	{
+		ref_signal[i] = tampon_buff[i];
+		raw_signal[i] = tampon_buff[i];
+	}
+
+	is_busy = 0;
+
+	/* Correlation */
+	xcorr(ref_signal, ref_signal);
+	ref_samples++;
+	ref_threshold += corr_max;
+
+}
+
+void analyse_target()
+{
+	ref_threshold = ref_threshold / ref_samples;
 }
 
 void signals_analyse()
 {
-	if(ref_sampled == 0)
+
+
+	for(int i = 0 ; i < SAMPLES_NBR ; i++)
 	{
-		//memset(ref_signal, sampling_buff, SAMPLES_NBR);
-		for(int i = 0 ; i < SAMPLES_NBR ; i++)
-		{
-			ref_signal[i] = sampling_buff[i];
-		}
-		crosscorrelation(ref_signal, ref_signal);
-		ref_threshold = corr_max;
-		ref_sampled = 1;
-	}
-	else
-	{
-		//strncpy(raw_signal, sampling_buff, SAMPLES_NBR);
-
-		for(int i = 0 ; i < SAMPLES_NBR ; i++)
-		{
-			raw_signal[i] = sampling_buff[i];//sampling_buff[i];
-		}
-
-		crosscorrelation(ref_signal, raw_signal);
-		search_signal();
-
+		raw_signal[i] = tampon_buff[i];//sampling_buff[i];
 	}
 
+	is_busy = 0;
+
+	xcorr(ref_signal, raw_signal);
+	search_signal();
 
 }
 
@@ -136,6 +177,7 @@ void search_signal()
 	{
 		if(corr_max >= th)
 		{
+			signal_counter++;
 			signal_detected = 1;
 		}
 	}
@@ -148,12 +190,15 @@ void search_signal()
 	}
 }
 
-
-
-void crosscorrelation(uint8_t* target, uint8_t* input_signal)
+void xcorr(uint8_t* ref_signal, uint8_t* comp_signal)
 {
+	crosscorrelation(ref_signal, comp_signal, 0, SAMPLES_NBR + SAMPLES_NBR -1);
+	//sample_corr_max = 512;
+}
 
-	uint32_t i,j,k;
+void crosscorrelation(uint8_t* target, uint8_t* input_signal , uint16_t min_w, uint16_t max_w)
+{
+	uint16_t i,j;
 	int p = SAMPLES_NBR + SAMPLES_NBR -1;
 
 
@@ -164,12 +209,6 @@ void crosscorrelation(uint8_t* target, uint8_t* input_signal)
 
 	float correlation[p];
 	uint32_t shift = 0;
-	uint32_t a = 0;
-
-	uint32_t norm = 0;
-
-	uint16_t min_w = 0;
-	uint16_t max_w = 0;
 
 	/*
 	min_w = (uint16_t)( (p/2) - 200);
@@ -205,7 +244,7 @@ void crosscorrelation(uint8_t* target, uint8_t* input_signal)
 
 
 	/* Perform all correlation(n) calculs */
-	corr_max = corr_func[0];
+	corr_max = correlation[0];
 
 	for(i = 0 ; i < p ; i++)
 	{
@@ -213,25 +252,23 @@ void crosscorrelation(uint8_t* target, uint8_t* input_signal)
 		/* Compute correlation(n) */
 		for(j = 0 ; j < p ; j++)
 		{
-			a = p - ((shift + j) % p);
-			correlation[i] += x_signal[j] * target_signal[p - ((shift + j) % p)];
+			correlation[i] += x_signal[j] * target_signal[(p-1) - ((shift + j + i) % p)];
 		}
+
+		correlation[i] =  ((float)(abs(correlation[i])));
 
 		if(correlation[i] > corr_max)
 		{
 			corr_max = correlation[i];
 			sample_corr_max = i;
 		}
+
 		shift++;
 
+
+		corr_func[i] =  (uint8_t)( (correlation[i] * THRESHOLD_RATIO * 0xFF) / ref_threshold);
+
 	}
-
-	for(i = 0 ; i < p ; i++)
-	{
-		corr_func[i] =  (uint8_t)(0xFF * ( (float)(abs(correlation[i])) / ref_threshold));
-	}
-
-
 }
 
 uint8_t can_display()
@@ -252,6 +289,11 @@ uint8_t get_threshold()
 uint8_t is_signal_here()
 {
 	return signal_detected;
+}
+
+uint16_t getSignalCnt()
+{
+	return signal_counter;
 }
 
 uint8_t* get_signal_data(SIGNAL_ID id)
