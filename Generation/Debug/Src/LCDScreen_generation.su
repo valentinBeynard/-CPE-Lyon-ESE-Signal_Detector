@@ -1,0 +1,5 @@
+LCDScreen_generation.c:25:6:Init_LCD	16	static
+LCDScreen_generation.c:46:6:Draw_Button	24	static
+LCDScreen_generation.c:83:6:TouchScreen_Polling	32	static
+LCDScreen_generation.c:123:6:Active_Button	24	static
+LCDScreen_generation.c:150:6:Signal	16	static
